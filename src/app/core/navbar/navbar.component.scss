@@ -1,6 +1,6 @@
 nav {
     background-color: rgb(137, 187, 217);
-    height: 200px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,10 +8,15 @@ nav {
     padding-right: 100px;
     font-weight: 500;
     font-size: 26px;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-logo {
-    height: 100px;
+    height: 70px;
 }
 
 .nav-links {
