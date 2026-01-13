@@ -9,5 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  openEmail() {
+    window.location.href = 'mailto:davideisenbarth@gmail.com';
+  }
 }
+

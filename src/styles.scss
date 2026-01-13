@@ -1,7 +1,126 @@
-body {
-  margin: 0;
-  background-color: rgb(37, 45, 51);
+// Lokale Font Definition
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/font/Josefin_Sans/static/JosefinSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/font/Josefin_Sans/static/JosefinSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/font/Josefin_Sans/static/JosefinSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/font/Josefin_Sans/static/JosefinSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/font/Josefin_Sans/static/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/font/Josefin_Sans/static/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anta';
+  src: url('/assets/font/Anta/Anta-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Globale Style
+body {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  background-color: rgb(37, 45, 51);
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+.d-none {
+  display: none;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(37, 45, 51);
+}
+
+h1 {
+  font-size: 88px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+// Font Class
+.josefin-sans-thin {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.josefin-sans-light {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.josefin-sans-regular {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans-medium {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.josefin-sans-semibold {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.josefin-sans-bold {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

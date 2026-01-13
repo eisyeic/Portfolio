@@ -1,0 +1,46 @@
+nav {
+    background-color: rgb(137, 187, 217);
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.nav-logo {
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.nav-language {
+    gap: 14px;
+    display: flex;
+    font-size: 18px;
+}
+
+.language-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+}
+
+.language-aktiv {
+    color: white !important;
+}

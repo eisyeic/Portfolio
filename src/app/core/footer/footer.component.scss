@@ -1,0 +1,68 @@
+footer {
+    background-color: rgb(137, 187, 217);
+    height: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+}
+
+.sozial-media-button {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    padding-bottom: 30px;
+    right: 100px;
+}
+
+.email-box,
+.github-box,
+.linkedin-box {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: opacity 0.3s ease;
+
+        &:first-child {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        &:last-child {
+            opacity: 0;
+            z-index: 2;
+        }
+    }
+
+
+    &:hover {
+        img {
+            &:first-child {
+                opacity: 0;
+            }
+
+            &:last-child {
+                opacity: 1;
+            }
+        }
+    }
+}
