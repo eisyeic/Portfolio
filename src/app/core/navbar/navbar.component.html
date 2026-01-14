@@ -1,21 +1,24 @@
 <nav>
-    <img class="nav-logo" src="/assets/img/navbar/logo-default.png" alt="logo-default">
+    <a class="nav-logo" (click)="onLogoClick()" style="cursor: pointer;">
+        <img src="/assets/img/navbar/logo-default.png" alt="logo-default">
+    </a>
 
     <div class="nav-links">
-        <a href="#">Why me</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#">{{ 'NAV_WHY_ME' | translate }}</a>
+        <a href="#">{{ 'NAV_SKILLS' | translate }}</a>
+        <a href="#">{{ 'NAV_PROJECTS' | translate }}</a>
+        <a href="#">{{ 'NAV_CONTACT' | translate }}</a>
     </div>
 
     <div class="nav-language">
         <div class="language-box">
-            <a href="#">DE</a>
-            <img class="d-none" src="/assets/img/navbar/ellipse-small.svg" alt="ellipse-small">
+            <a (click)="switchLanguage('de')" [class.language-aktiv]="currentLang === 'de'">DE</a>
+            <img [class.d-none]="currentLang !== 'de'" src="/assets/img/navbar/ellipse-small.svg" alt="ellipse-small">
         </div>
+
         <div class="language-box">
-            <a class="language-aktiv" href="#">EN</a>
-            <img src="/assets/img/navbar/ellipse-small.svg" alt="ellipse-small">
+            <a (click)="switchLanguage('en')" [class.language-aktiv]="currentLang === 'en'">EN</a>
+            <img [class.d-none]="currentLang !== 'en'" src="/assets/img/navbar/ellipse-small.svg" alt="ellipse-small">
         </div>
     </div>
 </nav>

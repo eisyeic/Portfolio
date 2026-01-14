@@ -5,6 +5,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { NavbarComponent } from "./core/navbar/navbar.component";
 import { FooterComponent } from "./core/footer/footer.component";
 import { filter } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -17,13 +18,20 @@ export class AppComponent implements OnInit {
   title = 'my-portfolio';
   showHeader = true;
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private translate: TranslateService
+  ) { }
 
   ngOnInit() {
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
+
     this.router.events.pipe(
       filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
-      this.showHeader = !event.url.includes('/legal-notice');
+      const hiddenRoutes = ['/legal-notice', '/privacy-policy'];
+      this.showHeader = !hiddenRoutes.some(route => event.url.includes(route));
     });
   }
 }

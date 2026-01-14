@@ -4,12 +4,12 @@ import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
-  selector: 'app-legal-notice',
+  selector: 'app-privacy-policy',
   standalone: true,
   imports: [CommonModule, TranslateModule],
-  templateUrl: './legal-notice.component.html',
-  styleUrl: './legal-notice.component.scss'
+  templateUrl: './privacy-policy.component.html',
+  styleUrl: './privacy-policy.component.scss'
 })
-export class LegalNoticeComponent {
+export class PrivacyPolicyComponent {
 
 }

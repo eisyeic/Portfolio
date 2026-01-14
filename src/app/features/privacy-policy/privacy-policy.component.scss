@@ -1,0 +1,13 @@
+.privacy-policy-container {
+    padding: 100px;
+}
+
+a {
+    color: rgb(137, 187, 217);
+
+    &:hover {
+        color: black;
+        background-color: rgb(137, 187, 217);
+        border-radius: 20px;
+    }
+}
