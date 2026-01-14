@@ -1,0 +1,16 @@
+.why-me-container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.why-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.from {
+    display: flex;
+    gap: 20px;
+}

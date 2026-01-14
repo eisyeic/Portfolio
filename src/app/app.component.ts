@@ -1,22 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet, NavigationEnd, Router, Event } from '@angular/router';
-import { HeaderComponent } from './core/header/header.component';
-import { NavbarComponent } from "./core/navbar/navbar.component";
+import { RouterOutlet, Router } from '@angular/router';
 import { FooterComponent } from "./core/footer/footer.component";
-import { filter } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
+import { HomeComponent } from './shared/home/home.component';
+import { HeaderComponent } from "./core/header/header.component"; 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, NavbarComponent, FooterComponent],
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   title = 'my-portfolio';
-  showHeader = true;
 
   constructor(
     private router: Router,
@@ -26,12 +24,5 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
-
-    this.router.events.pipe(
-      filter((event: Event): event is NavigationEnd => event instanceof NavigationEnd)
-    ).subscribe((event: NavigationEnd) => {
-      const hiddenRoutes = ['/legal-notice', '/privacy-policy'];
-      this.showHeader = !hiddenRoutes.some(route => event.url.includes(route));
-    });
   }
 }

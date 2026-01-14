@@ -30,6 +30,12 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 100px;
+
+    a{
+        &:hover {
+            color: white;
+        }
+    }
 }
 
 .nav-language {
