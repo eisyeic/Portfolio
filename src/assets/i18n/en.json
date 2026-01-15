@@ -55,5 +55,11 @@
     "PRIVACY_SECTION6_TITLE": "6. Social Media",
     "PRIVACY_SECTION6_TEXT": "This website uses social media plugins (e.g. Facebook) via the privacy-friendly Shariff solution. Data transfer only occurs after explicit consent.",
     "PRIVACY_SECTION7_TITLE": "7. Google Fonts",
-    "PRIVACY_SECTION7_TEXT": "Google Fonts are hosted locally. No connection to Google servers is established."
+    "PRIVACY_SECTION7_TEXT": "Google Fonts are hosted locally. No connection to Google servers is established.",
+    "WHY_ME_TITLE": "Why me",
+    "WHY_ME_REMOTE_HIGHLIGHT": "I am",
+    "WHY_ME_REMOTE_TEXT_1": "open to",
+    "WHY_ME_REMOTE_TEXT_2": "work remote from Berlingerode!",
+    "WHY_ME_DESCRIPTION": "I am passionate about programming because it combines analytical thinking with creativity. Frontend development especially motivates me, as it allows me to turn technical solutions into user-friendly and visually appealing interfaces. Challenges encourage me to think in a solution-oriented way and to work persistently until problems are resolved. Through my training as a Frontend Developer, I have also learned the importance of teamwork and collaboration in order to create efficient and well-structured solutions together.",
+    "WHY_ME_BUTTON": "Let's talk!"
 }

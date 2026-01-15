@@ -1,0 +1,37 @@
+<div class="contact-form">
+    <div class="form-container">
+        <div class="row">
+            <div class="field">
+                <label>Your name</label>
+                <input type="text" placeholder="">
+            </div>
+            <div class="field">
+                <label>Your Email</label>
+                <input type="email" placeholder="">
+            </div>
+        </div>
+
+        <div class="field">
+            <label>Your Message</label>
+            <textarea placeholder=""></textarea>
+        </div>
+
+        <div class="bottom">
+            
+            <div class="checkbox" [class.checked]="isChecked" [class.error]="isError" (click)="toggleCheckbox()"
+                (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
+                <img *ngIf="isError" src="/assets/img/contact-me/checkbox-error.svg" alt="Checkbox Error">
+                <img *ngIf="!isError && !isChecked && isHovered" src="/assets/img/contact-me/checkbox-hover.svg"
+                    alt="Checkbox Hover">
+                <img *ngIf="!isError && isChecked" src="/assets/img/contact-me/checkbox-checked.svg"
+                    alt="Checkbox Checked">
+                <img *ngIf="!isError && !isChecked && !isHovered" src="/assets/img/contact-me/checkbox-default.svg"
+                    alt="Checkbox Default">
+                <p>I’ve read the privacy policy and agree to the processing of my data as outlined.</p>
+            </div>
+
+            <button type="submit" [disabled]="!isChecked">Send</button>
+        </div>
+    </div>
+
+</div>

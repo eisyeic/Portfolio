@@ -64,6 +64,13 @@ body {
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 .d-none {
   display: none;
 }

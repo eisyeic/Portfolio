@@ -1,0 +1,53 @@
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    padding-bottom: 0;
+
+    h2 {
+        margin-top: 0;
+        color: rgb(137, 187, 217);
+    }
+}
+
+.my-skills-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.my-skills-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.my-skills-text-box {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 380px;
+    background-image: url('/assets/img/my-skills/ellipse-default.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+        background-image: url('/assets/img/my-skills/ellipse-hover.svg');
+        width: 380px;
+        height: 380px;
+    }
+
+    p{
+        width: 300px;
+    }
+}

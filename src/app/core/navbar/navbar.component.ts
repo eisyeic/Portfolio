@@ -39,4 +39,24 @@ export class NavbarComponent {
       });
     }
   }
+
+  scrollToSection(sectionId: string) {
+    if (this.router.url === '/' || this.router.url.startsWith('/#')) {
+      // Schon auf der Startseite: direkt scrollen
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Nicht auf der Startseite: erst zur Startseite, dann scrollen
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          const el = document.getElementById(sectionId);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 500); // Kurze Verzögerung, damit die Seite geladen ist
+      });
+    }
+  }
 }

@@ -1,0 +1,121 @@
+   .contact-form {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-left: 250px;
+       padding-right: 250px;
+       padding-top: 50px;
+   }
+
+   .form-container {
+       width: 100%;
+   }
+
+   .row {
+       display: flex;
+       gap: 50px;
+       margin-bottom: 25px;
+   }
+
+   .field {
+       flex: 1;
+   }
+
+   label {
+       display: block;
+       font-size: 14px;
+       margin-left: 25px;
+       margin-bottom: 8px;
+       color: rgb(137, 186, 217);
+   }
+
+   input[type="text"],
+   input[type="email"] {
+    width: 100%;
+       background: transparent;
+       border: 1.5px solid rgb(137, 187, 217);
+       border-radius: 50px;
+       color: #ffffff;
+       font-size: 14px;
+       outline: none;
+       height: 50px;
+   }
+
+   textarea {
+       width: 100%;
+       background: transparent;
+       border: 1.5px solid rgb(137, 187, 217);
+       border-radius: 50px;
+       color: #ffffff;
+       font-size: 14px;
+       outline: none;
+   }
+
+   textarea {
+       border-radius: 30px;
+       height: 160px;
+       resize: none;
+   }
+
+   input::placeholder,
+   textarea::placeholder {
+       color: rgba(137, 187, 217, 0.6);
+   }
+
+   .bottom {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 20px;
+   }
+
+   .checkbox {
+       cursor: pointer;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+
+       p {
+           margin: 0;
+       }
+
+       img {
+           width: 32px;
+           height: 32px;
+           display: block;
+       }
+
+       &.error {
+           cursor: not-allowed;
+       }
+   }
+
+
+button {
+    background-color: transparent;
+    color: rgb(144, 145, 145);
+    border: 1.5px solid rgb(144, 145, 145);
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: not-allowed;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+    &:disabled {
+        color: rgb(144, 145, 145);
+        border: 1.5px solid rgb(144, 145, 145);
+        background-color: transparent;
+        cursor: not-allowed;
+    }
+
+    &:not(:disabled) {
+        color: rgb(137, 186, 217);
+        border: 1.5px solid rgb(137, 186, 217);
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &:not(:disabled):hover {
+        background-color: rgba(137, 186, 217, 0.5);
+    }
+}

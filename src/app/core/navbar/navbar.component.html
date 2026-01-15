@@ -4,10 +4,10 @@
     </a>
 
     <div class="nav-links">
-        <a href="#">{{ 'NAV_WHY_ME' | translate }}</a>
-        <a href="#">{{ 'NAV_SKILLS' | translate }}</a>
-        <a href="#">{{ 'NAV_PROJECTS' | translate }}</a>
-        <a href="#">{{ 'NAV_CONTACT' | translate }}</a>
+        <a (click)="scrollToSection('why-me')">{{ 'NAV_WHY_ME' | translate }}</a>
+        <a (click)="scrollToSection('my-skills')">{{ 'NAV_SKILLS' | translate }}</a>
+        <a (click)="scrollToSection('my-projects')">{{ 'NAV_PROJECTS' | translate }}</a>
+        <a (click)="scrollToSection('contact-me')">{{ 'NAV_CONTACT' | translate }}</a>
     </div>
 
     <div class="nav-language">

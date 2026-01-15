@@ -1,0 +1,193 @@
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    padding-bottom: 0;
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+    h2 {
+        margin-top: 0;
+        color: rgb(137, 187, 217);
+    }
+}
+
+.back-button {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    width: 50px;
+    height: 100px;
+    cursor: pointer;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: opacity 0.3s ease;
+
+        &:first-child {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        &:last-child {
+            opacity: 0;
+            z-index: 2;
+        }
+    }
+
+
+    &:hover {
+        img {
+            &:first-child {
+                opacity: 0;
+            }
+
+            &:last-child {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.contact-text-container {
+    display: flex;
+    gap: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.text-box {
+    width: 50%;
+
+    p {
+        margin: 0;
+    }
+}
+
+.info-box {
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+        color: white;
+    }
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+    .email-icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        transition: opacity 0.2s;
+        display: none;
+    }
+
+    .email-icon.default {
+        display: block;
+    }
+
+    .email-icon.hover {
+        display: none;
+    }
+
+    .email-icon.active {
+        display: none;
+    }
+
+    &:hover .email-icon.default {
+        display: none;
+    }
+
+    &:hover .email-icon.hover {
+        display: block;
+    }
+
+    &:active .email-icon.hover {
+        display: none;
+    }
+
+    &:active .email-icon.active {
+        display: block;
+    }
+
+    a {
+        margin-left: 60px;
+
+        &:hover,
+        &:active {
+            color: rgb(137, 187, 217);
+        }
+    }
+}
+
+.phone-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+    .phone-icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        transition: opacity 0.2s;
+        display: none;
+    }
+
+    .phone-icon.default {
+        display: block;
+    }
+
+    .phone-icon.hover {
+        display: none;
+    }
+
+    &:hover .phone-icon.default {
+        display: none;
+    }
+
+    &:hover .phone-icon.hover {
+        display: block;
+    }
+
+    a {
+        margin-left: 60px;
+
+        &:hover {
+            color: rgb(137, 187, 217);
+        }
+    }
+}

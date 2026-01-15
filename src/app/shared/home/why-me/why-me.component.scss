@@ -1,16 +1,75 @@
 .why-me-container {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.why-me-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 100px;
+    padding-bottom: 0;
+
+    h2 {
+        margin-top: 0;
+        color: rgb(137, 187, 217);
+    }
+}
+
+.why-me-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
 }
 
 .from {
     display: flex;
+    align-items: start;
+    justify-content: center;
     gap: 20px;
+    text-align: center;
+
+    h4 {
+        margin: 0;
+    }
 }
+
+.why-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 20px;
+
+    p{
+        margin: 0;
+    }
+}
+
+.why-me-button-box {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.why-me-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px; 
+  width: 150px; 
+  font-size: 18px;
+  color:rgb(137, 187, 217);
+  background-image: url('/assets/img/why-me/lets-talk-default.svg'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: center;
+
+  &:hover {
+    background-image: url('/assets/img/why-me/lets-talk-hover.svg'); 
+  }
+
+  &:active {
+    background-image: url('/assets/img/why-me/lets-talk-click.svg'); 
+  }
+}
+

@@ -55,5 +55,11 @@
     "PRIVACY_SECTION6_TITLE": "6. Social Media",
     "PRIVACY_SECTION6_TEXT": "Diese Website verwendet Social-Media-Plugins (z. B. Facebook) über die datenschutzfreundliche Shariff-Lösung. Die Datenübertragung erfolgt nur nach ausdrücklicher Einwilligung.",
     "PRIVACY_SECTION7_TITLE": "7. Google Fonts",
-    "PRIVACY_SECTION7_TEXT": "Google Fonts werden lokal gehostet. Es wird keine Verbindung zu Google-Servern hergestellt."
+    "PRIVACY_SECTION7_TEXT": "Google Fonts werden lokal gehostet. Es wird keine Verbindung zu Google-Servern hergestellt.",
+    "WHY_ME_TITLE": "Warum ich",
+    "WHY_ME_REMOTE_HIGHLIGHT": "Ich bin",
+    "WHY_ME_REMOTE_TEXT_1": "offen für",
+    "WHY_ME_REMOTE_TEXT_2": "Remote-Arbeit aus Berlingerode!",
+    "WHY_ME_DESCRIPTION": "Ich begeistere mich für Programmierung, weil sie analytisches Denken mit Kreativität verbindet. Besonders die Frontend-Entwicklung motiviert mich, da sie es mir ermöglicht, technische Lösungen in benutzerfreundliche und visuell ansprechende Oberflächen umzusetzen. Herausforderungen motivieren mich, lösungsorientiert zu denken und beharrlich zu arbeiten, bis Probleme gelöst sind. Durch meine Ausbildung zum Frontend Developer habe ich außerdem gelernt, wie wichtig Teamarbeit und Zusammenarbeit sind, um gemeinsam effiziente und gut strukturierte Lösungen zu entwickeln.",
+    "WHY_ME_BUTTON": "Lass uns reden!"
 }
