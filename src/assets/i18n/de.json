@@ -77,5 +77,11 @@
     "FORM_PRIVACY_TEXT_AFTER": "gelesen und stimme der Verarbeitung meiner Daten zu.",
     "FORM_SEND_BUTTON": "Senden",
     "FORM_POPUP_SUCCESS": "Die Nachricht wurde erfolgreich übermittelt.",
-    "FORM_POPUP_OK": "OK"
+    "FORM_POPUP_OK": "OK",
+    "TESTIMONIALS_TITLE": "Du suchst einen Teamplayer? Das sagen meine Kollegen über mich",
+    "TESTIMONIAL_PROJECT": "Projekt",
+    "TESTIMONIAL_LINKEDIN": "LinkedIn Profil",
+    "TESTIMONIAL_1_TEXT": "David entwickelte, strukturierte und lieferte Inhalte in einem Einzelprojekt. Er ist eine zuverlässige und freundliche Person.",
+    "TESTIMONIAL_2_TEXT": "David ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt sauberen Code. Ich empfehle ihn als Kollegen.",
+    "TESTIMONIAL_3_TEXT": "Er ist ein vertrauenswürdiger Teamplayer und kann gut mit Termindruck umgehen. Strukturierte Arbeitsweise und sauberer Code."
 }

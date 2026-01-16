@@ -1,0 +1,75 @@
+.say-about-me {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+        color: rgb(137, 186, 217);
+        font-size: 32px;
+    }
+}
+
+.bubble-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.bubble-box {
+    background-image: url(/assets/img/say-about-me/bubble-default.svg);
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+
+    h5 {
+        font-size: 26px;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 18px;
+        margin: 0;
+        font-weight: 400;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    a{
+        font-size: 18px;
+        color: rgb(137, 186, 217);
+    }
+
+    p {
+        width: 290px;
+    }
+
+    &:hover {
+        background-image: url(/assets/img/say-about-me/bubble-hover.svg);
+    }
+}
+
+.linkedin {
+        font-size: 16px;
+        text-decoration: underline;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+       
+}

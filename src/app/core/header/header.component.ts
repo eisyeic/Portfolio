@@ -13,5 +13,9 @@ export class HeaderComponent {
   openEmail() {
     window.location.href = 'mailto:davideisenbarth@gmail.com';
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 

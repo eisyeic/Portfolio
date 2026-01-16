@@ -1,1 +1,231 @@
-<p>projects works!</p>
+<div id="my-projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="nav">
+        <span class="tab" [class.active]="activeTab === 1" (click)="setTab(1)">1. Pokedex</span>
+        <span class="tab" [class.active]="activeTab === 2" (click)="setTab(2)">2. El pollo loco</span>
+        <span class="tab" [class.active]="activeTab === 3" (click)="setTab(3)">3. Join</span>
+        <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">4. Ongoing Project</span>
+    </div>
+    <div class="content">
+        <!-- Tab 1 -->
+        <ng-container *ngIf="activeTab === 1">
+            <div class="container-left">
+                <!-- Dein aktueller Content für Tab 1 -->
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>About the project</h5>
+                        <span>Duration: 1 weeks</span>
+                    </div>
+                    <div>
+                        <p>This App is a self-built Pokédex App.
+                            It provides a comprehensive overview of Pokémon with detailed information, intuitive navigation,
+                            and a clean user interface, all developed independently to showcase strong problem-solving skills,
+                            structured data handling, and attention to detail.</p>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>How I have organised my work process</h5>
+                    </div>
+                    <div>
+                        <p>My workflow was carefully structured and self-managed.
+                            I planned features step by step, broke down complex tasks into manageable parts, and
+                            continuously tested and refined the application to ensure clean code, reliability, and steady progress throughout the project.</p>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>What I have learned</h5>
+                    </div>
+                    <div>
+                        <p>Through this project, I significantly expanded my skill set.
+                            I improved my ability to work independently, deepened my understanding of structured data handling and component-based development, and gained valuable experience in planning, problem-solving, and building scalable applications from scratch.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="picture-area">
+                    <span>Technologies</span>
+                    <div class="technologies">
+                        <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
+                        <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
+                        <img src="/assets/img/project/javascript-icon.svg" alt="Javascript Icon">
+                    </div>
+                    <img class="screen" src="/assets/img/project/pokedex-screen.JPG" alt="Pokedex Screen">
+                    <div class="button-box">
+                        <a href="https://pokedex-1337.netlify.app/" target="_blank">Live Test</a>
+                        <a href="https://github.com/eisyeic/Pokedex.git" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+      
+        <ng-container *ngIf="activeTab === 2">
+            <div class="container-left">
+                
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>About the project</h5>
+                        <span>Duration: 5 weeks</span>
+                    </div>
+                    <div>
+                        <p>This App is a self-built Pokédex App.
+                            It provides a comprehensive overview of Pokémon with detailed information, intuitive navigation,
+                            and a clean user interface, all developed independently to showcase strong problem-solving skills,
+                            structured data handling, and attention to detail.</p>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>How I have organised my work process</h5>
+                    </div>
+                    <div>
+                        <p>My workflow was carefully structured and self-managed.
+                            I planned features step by step, broke down complex tasks into manageable parts, and
+                            continuously tested and refined the application to ensure clean code, reliability, and steady progress throughout the project.</p>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>What I have learned</h5>
+                    </div>
+                    <div>
+                        <p>Through this project, I significantly expanded my skill set.
+                            I improved my ability to work independently, deepened my understanding of structured data handling and component-based development, and gained valuable experience in planning, problem-solving, and building scalable applications from scratch.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="picture-area">
+                    <span>Technologies</span>
+                    <div class="technologies">
+                        <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
+                        <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
+                        <img src="/assets/img/project/javascript-icon.svg" alt="Javascript Icon">
+                    </div>
+                    <img class="screen" src="/assets/img/project/pokedex-screen.JPG" alt="Pokedex Screen">
+                    <div class="button-box">
+                        <a href="https://pokedex-1337.netlify.app/" target="_blank">Live Test</a>
+                        <a href="https://github.com/eisyeic/Pokedex.git" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <!-- Tab 3 -->
+        <ng-container *ngIf="activeTab === 3">
+            <div class="container-left">
+                <!-- Gleicher Aufbau, Content für Tab 3 einfügen -->
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>About the project</h5>
+                        <span>Duration: 1 weeks</span>
+                    </div>
+                    <div>
+                        <p>This App is a self-built Pokédex App.
+                            It provides a comprehensive overview of Pokémon with detailed information, intuitive navigation,
+                            and a clean user interface, all developed independently to showcase strong problem-solving skills,
+                            structured data handling, and attention to detail.</p>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>How I have organised my work process</h5>
+                    </div>
+                    <div>
+                        <p>My workflow was carefully structured and self-managed.
+                            I planned features step by step, broke down complex tasks into manageable parts, and
+                            continuously tested and refined the application to ensure clean code, reliability, and steady progress throughout the project.</p>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>What I have learned</h5>
+                    </div>
+                    <div>
+                        <p>Through this project, I significantly expanded my skill set.
+                            I improved my ability to work independently, deepened my understanding of structured data handling and component-based development, and gained valuable experience in planning, problem-solving, and building scalable applications from scratch.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="picture-area">
+                    <span>Technologies</span>
+                    <div class="technologies">
+                        <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
+                        <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
+                        <img src="/assets/img/project/javascript-icon.svg" alt="Javascript Icon">
+                    </div>
+                    <img class="screen" src="/assets/img/project/pokedex-screen.JPG" alt="Pokedex Screen">
+                    <div class="button-box">
+                        <a href="https://pokedex-1337.netlify.app/" target="_blank">Live Test</a>
+                        <a href="https://github.com/eisyeic/Pokedex.git" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <!-- Tab 4 -->
+        <ng-container *ngIf="activeTab === 4">
+            <div class="container-left">
+                <!-- Gleicher Aufbau, Content für Tab 4 einfügen -->
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>About the project</h5>
+                        <span>Duration: 1 weeks</span>
+                    </div>
+                    <div>
+                        <p>This App is a self-built Pokédex App.
+                            It provides a comprehensive overview of Pokémon with detailed information, intuitive navigation,
+                            and a clean user interface, all developed independently to showcase strong problem-solving skills,
+                            structured data handling, and attention to detail.</p>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>How I have organised my work process</h5>
+                    </div>
+                    <div>
+                        <p>My workflow was carefully structured and self-managed.
+                            I planned features step by step, broke down complex tasks into manageable parts, and
+                            continuously tested and refined the application to ensure clean code, reliability, and steady progress throughout the project.</p>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="text-title">
+                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
+                        <h5>What I have learned</h5>
+                    </div>
+                    <div>
+                        <p>Through this project, I significantly expanded my skill set.
+                            I improved my ability to work independently, deepened my understanding of structured data handling and component-based development, and gained valuable experience in planning, problem-solving, and building scalable applications from scratch.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="picture-area">
+                    <span>Technologies</span>
+                    <div class="technologies">
+                        <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
+                        <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
+                        <img src="/assets/img/project/javascript-icon.svg" alt="Javascript Icon">
+                    </div>
+                    <img class="screen" src="/assets/img/project/pokedex-screen.JPG" alt="Pokedex Screen">
+                    <div class="button-box">
+                        <a href="https://pokedex-1337.netlify.app/" target="_blank">Live Test</a>
+                        <a href="https://github.com/eisyeic/Pokedex.git" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
