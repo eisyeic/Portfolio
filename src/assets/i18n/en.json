@@ -61,5 +61,21 @@
     "WHY_ME_REMOTE_TEXT_1": "open to",
     "WHY_ME_REMOTE_TEXT_2": "work remote from Berlingerode!",
     "WHY_ME_DESCRIPTION": "I am passionate about programming because it combines analytical thinking with creativity. Frontend development especially motivates me, as it allows me to turn technical solutions into user-friendly and visually appealing interfaces. Challenges encourage me to think in a solution-oriented way and to work persistently until problems are resolved. Through my training as a Frontend Developer, I have also learned the importance of teamwork and collaboration in order to create efficient and well-structured solutions together.",
-    "WHY_ME_BUTTON": "Let's talk!"
+    "WHY_ME_BUTTON": "Let's talk!",
+    "SKILLS_TITLE": "My Skills",
+    "SKILLS_LEARNING_TITLE": "I am currently learning",
+    "SKILLS_LEARNING_TEXT": "I am motivated to continually improve my skills, implement innovative solutions and stay up to date with new technologies.",
+    "CONTACT_TITLE": "Contact me",
+    "CONTACT_DESCRIPTION": "Feel free to get in touch with job offers or opportunities such as freelance work, permanent roles, or collaborations. I am interested in contributing my skills to meaningful projects and adding value through reliable, high-quality work.",
+    "CONTACT_EMAIL_LABEL": "Email: davideisenbarth@gmail.com",
+    "CONTACT_PHONE_LABEL": "Phone: +49 151 22264080",
+    "FORM_NAME_LABEL": "Your name",
+    "FORM_EMAIL_LABEL": "Your email",
+    "FORM_MESSAGE_LABEL": "Your message",
+    "FORM_PRIVACY_TEXT_BEFORE": "I’ve read the",
+    "FORM_PRIVACY_LINK": "privacy policy",
+    "FORM_PRIVACY_TEXT_AFTER": "and agree to the processing of my data as outlined.",
+    "FORM_SEND_BUTTON": "Send",
+    "FORM_POPUP_SUCCESS": "The message has been transmitted.",
+    "FORM_POPUP_OK": "OK"
 }

@@ -61,5 +61,21 @@
     "WHY_ME_REMOTE_TEXT_1": "offen für",
     "WHY_ME_REMOTE_TEXT_2": "Remote-Arbeit aus Berlingerode!",
     "WHY_ME_DESCRIPTION": "Ich begeistere mich für Programmierung, weil sie analytisches Denken mit Kreativität verbindet. Besonders die Frontend-Entwicklung motiviert mich, da sie es mir ermöglicht, technische Lösungen in benutzerfreundliche und visuell ansprechende Oberflächen umzusetzen. Herausforderungen motivieren mich, lösungsorientiert zu denken und beharrlich zu arbeiten, bis Probleme gelöst sind. Durch meine Ausbildung zum Frontend Developer habe ich außerdem gelernt, wie wichtig Teamarbeit und Zusammenarbeit sind, um gemeinsam effiziente und gut strukturierte Lösungen zu entwickeln.",
-    "WHY_ME_BUTTON": "Lass uns reden!"
+    "WHY_ME_BUTTON": "Lass uns reden!",
+    "SKILLS_TITLE": "Meine Fähigkeiten",
+    "SKILLS_LEARNING_TITLE": "Ich lerne derzeit",
+    "SKILLS_LEARNING_TEXT": "Ich bin motiviert, meine Fähigkeiten kontinuierlich zu verbessern, innovative Lösungen umzusetzen und stets auf dem neuesten Stand neuer Technologien zu bleiben.",
+    "CONTACT_TITLE": "Kontakt",
+    "CONTACT_DESCRIPTION": "Gerne können Sie mich mit Jobangeboten oder Möglichkeiten wie Freelance-Arbeiten, Festanstellungen oder Kooperationen kontaktieren. Ich bin daran interessiert, meine Fähigkeiten in sinnvolle Projekte einzubringen und durch zuverlässige, qualitativ hochwertige Arbeit Mehrwert zu schaffen.",
+    "CONTACT_EMAIL_LABEL": "E-Mail: davideisenbarth@gmail.com",
+    "CONTACT_PHONE_LABEL": "Telefon: +49 151 22264080",
+    "FORM_NAME_LABEL": "Ihr Name",
+    "FORM_EMAIL_LABEL": "Ihre E-Mail",
+    "FORM_MESSAGE_LABEL": "Ihre Nachricht",
+    "FORM_PRIVACY_TEXT_BEFORE": "Ich habe die",
+    "FORM_PRIVACY_LINK": "Datenschutzerklärung",
+    "FORM_PRIVACY_TEXT_AFTER": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "FORM_SEND_BUTTON": "Senden",
+    "FORM_POPUP_SUCCESS": "Die Nachricht wurde erfolgreich übermittelt.",
+    "FORM_POPUP_OK": "OK"
 }

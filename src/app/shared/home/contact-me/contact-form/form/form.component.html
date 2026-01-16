@@ -1,37 +1,62 @@
-<div class="contact-form">
-    <div class="form-container">
-        <div class="row">
-            <div class="field">
-                <label>Your name</label>
-                <input type="text" placeholder="">
-            </div>
-            <div class="field">
-                <label>Your Email</label>
-                <input type="email" placeholder="">
-            </div>
-        </div>
+<form
+  class="contact-form"
+  action="https://formspree.io/f/xykkkybo"
+  method="POST"
+  #contactForm="ngForm"
+  (ngSubmit)="submitForm($event, contactForm)"
+>
+  <div class="form-container">
+    <div class="row">
+      <div class="field">
+        <label>{{ 'FORM_NAME_LABEL' | translate }}</label>
+        <input #nameInput type="text" name="name" required />
+      </div>
 
-        <div class="field">
-            <label>Your Message</label>
-            <textarea placeholder=""></textarea>
-        </div>
-
-        <div class="bottom">
-            
-            <div class="checkbox" [class.checked]="isChecked" [class.error]="isError" (click)="toggleCheckbox()"
-                (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
-                <img *ngIf="isError" src="/assets/img/contact-me/checkbox-error.svg" alt="Checkbox Error">
-                <img *ngIf="!isError && !isChecked && isHovered" src="/assets/img/contact-me/checkbox-hover.svg"
-                    alt="Checkbox Hover">
-                <img *ngIf="!isError && isChecked" src="/assets/img/contact-me/checkbox-checked.svg"
-                    alt="Checkbox Checked">
-                <img *ngIf="!isError && !isChecked && !isHovered" src="/assets/img/contact-me/checkbox-default.svg"
-                    alt="Checkbox Default">
-                <p>I’ve read the privacy policy and agree to the processing of my data as outlined.</p>
-            </div>
-
-            <button type="submit" [disabled]="!isChecked">Send</button>
-        </div>
+      <div class="field">
+        <label>{{ 'FORM_EMAIL_LABEL' | translate }}</label>
+        <input #emailInput type="email" name="email" required />
+      </div>
     </div>
 
+    <div class="field">
+      <label>{{ 'FORM_MESSAGE_LABEL' | translate }}</label>
+      <textarea #messageInput name="message" required></textarea>
+    </div>
+
+    <input type="hidden" name="_subject" value="New contact request" />
+    <input type="text" name="_gotcha" style="display:none">
+
+    <div class="bottom">
+      <div
+        class="checkbox"
+        [class.checked]="isChecked"
+        [class.error]="isError"
+        (click)="toggleCheckbox()"
+      >
+        <img *ngIf="isError" src="/assets/img/contact-me/checkbox-error.svg">
+        <img *ngIf="!isError && isChecked" src="/assets/img/contact-me/checkbox-checked.svg">
+        <img *ngIf="!isError && !isChecked" src="/assets/img/contact-me/checkbox-default.svg">
+
+        <p>
+          {{ 'FORM_PRIVACY_TEXT_BEFORE' | translate }}
+          <a href="/privacy-policy" (click)="$event.stopPropagation()">{{ 'FORM_PRIVACY_LINK' | translate }}</a>
+          {{ 'FORM_PRIVACY_TEXT_AFTER' | translate }}
+        </p>
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="!isChecked || !nameInput.value || !emailInput.value || !messageInput.value"
+      >
+        {{ 'FORM_SEND_BUTTON' | translate }}
+      </button>
+    </div>
+  </div>
+</form>
+
+<div class="popup-overlay" *ngIf="showPopup">
+  <div class="popup">
+    <p>{{ 'FORM_POPUP_SUCCESS' | translate }}</p>
+    <button (click)="closePopup()">{{ 'FORM_POPUP_OK' | translate }}</button>
+  </div>
 </div>
