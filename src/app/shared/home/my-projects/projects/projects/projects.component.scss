@@ -136,6 +136,29 @@
     border-radius: 25px;
 }
 
+.screen-cover {
+    object-fit: cover !important;
+    width: 460px;
+    height: 320px;
+    border-radius: 25px;
+    object-position: left top;
+}
+
+.white-screen {
+     width: 460px;
+    height: 320px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        h5 {
+            font-size: 26px;
+            color: rgb(137, 187, 217);
+        }
+}
+
 .button-box {
     display: flex;
     justify-content: center;
