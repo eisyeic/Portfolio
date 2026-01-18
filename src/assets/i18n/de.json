@@ -83,5 +83,69 @@
     "TESTIMONIAL_LINKEDIN": "LinkedIn Profil",
     "TESTIMONIAL_1_TEXT": "David entwickelte, strukturierte und lieferte Inhalte in einem Einzelprojekt. Er ist eine zuverlässige und freundliche Person.",
     "TESTIMONIAL_2_TEXT": "David ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt sauberen Code. Ich empfehle ihn als Kollegen.",
-    "TESTIMONIAL_3_TEXT": "Er ist ein vertrauenswürdiger Teamplayer und kann gut mit Termindruck umgehen. Strukturierte Arbeitsweise und sauberer Code."
+    "TESTIMONIAL_3_TEXT": "Er ist ein vertrauenswürdiger Teamplayer und kann gut mit Termindruck umgehen. Strukturierte Arbeitsweise und sauberer Code.",
+    "PROJECTS": {
+        "TITLE": "Meine Projekte",
+        "TABS": {
+            "POKEDEX": "1. Pokedex",
+            "ELPOLLOLOCO": "2. El pollo loco",
+            "JOIN": "3. Join",
+            "ONGOING": "4. Laufendes Projekt"
+        },
+        "TECHNOLOGIES": "Technologien",
+        "LIVE_TEST": "Live Test",
+        "COMING_SOON": "Bald verfügbar ..."
+    },
+    "POKEDEX": {
+        "ABOUT": {
+            "TITLE": "Über das Projekt",
+            "DURATION": "Dauer: 1 Woche",
+            "CONTENT": "Diese App ist ein selbstgebautes Pokédex-App. Sie bietet einen umfassenden Überblick über Pokémon mit detaillierten Informationen, intuitiver Navigation und sauberem Interface, alles eigenständig entwickelt, um starke Problemlösungsfähigkeiten, strukturiertes Arbeiten und Liebe zum Detail zu demonstrieren."
+        },
+        "WORK": {
+            "TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
+            "CONTENT": "Mein Workflow war sorgfältig strukturiert und selbstverwaltet. Ich habe Funktionen Schritt für Schritt geplant, komplexe Aufgaben in überschaubare Teile zerlegt und die Anwendung kontinuierlich getestet und verfeinert, um sauberen Code, Zuverlässigkeit und stetigen Fortschritt sicherzustellen."
+        },
+        "LEARNED": {
+            "TITLE": "Was ich gelernt habe",
+            "CONTENT": "Durch dieses Projekt habe ich mein Skillset deutlich erweitert. Ich verbesserte meine Fähigkeit, eigenständig zu arbeiten, vertiefte mein Verständnis für strukturiertes Datenhandling und komponentenbasierte Entwicklung und sammelte wertvolle Erfahrungen in Planung, Problemlösung und Aufbau skalierbarer Anwendungen."
+        }
+    },
+    "ELPOLLO": {
+        "ABOUT": {
+            "TITLE": "Über das Projekt",
+            "DURATION": "Dauer: 5 Wochen",
+            "CONTENT": "Ein einfaches Jump-and-Run-Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen."
+        },
+        "WORK": {
+            "TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
+            "CONTENT": "Die Anwendung ist objektorientiert und in klare Klassen wie Spieler, Gegner, Items und Spielwelt unterteilt. Beschreibende Namen für Dateien, Variablen und Methoden machen den Code leicht verständlich. Wichtige Funktionen sind kurz dokumentiert, und die klare Struktur erlaubt einfache Erweiterungen oder Anpassungen von Spielmechaniken."
+        },
+        "LEARNED": {
+            "TITLE": "Was ich gelernt habe",
+            "CONTENT": "Durch dieses Projekt habe ich mein Skillset deutlich erweitert. Ich verbesserte meine Fähigkeit, eigenständig zu arbeiten, vertiefte mein Verständnis für strukturiertes Datenhandling und komponentenbasierte Entwicklung und sammelte wertvolle Erfahrungen in Planung, Problemlösung und Aufbau skalierbarer Anwendungen."
+        }
+    },
+    "JOIN": {
+        "ABOUT": {
+            "TITLE": "Über das Projekt",
+            "DURATION": "Dauer: 5 Wochen",
+            "CONTENT": "Task Manager inspiriert vom Kanban-System. Aufgaben erstellen und organisieren mit Drag-and-Drop, Benutzer und Kategorien zuweisen."
+        },
+        "WORK": {
+            "TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
+            "CONTENT": "In unserem Gruppenprojekt mit HTML, CSS und Java strukturierten wir den Code übersichtlich und wartbar. Die Anwendung ist in klar getrennte Bereiche aufgeteilt (Struktur, Design, Logik). Wir verwenden sprechende Namen für Dateien, Variablen und Klassen und dokumentieren wichtige Stellen kurz im Code. Durch einfache Tests und gegenseitige Code-Reviews stellen wir die Qualität und Verständlichkeit sicher."
+        },
+        "LEARNED": {
+            "TITLE": "Was ich gelernt habe",
+            "CONTENT": "Wir waren zu dritt im Team, und die Rollen waren gleichmäßig verteilt. Meine Hauptaufgaben lagen bei Task-Management, Pinnwand, Impressum und Datenschutzseiten. Es war eine tolle Zusammenarbeit und ein erfolgreiches Projekt."
+        }
+    },
+    "ONGOING": {
+        "ABOUT": {
+            "TITLE": "Über das Projekt",
+            "DURATION": "Dauer: 3 Wochen",
+            "CONTENT": "Diese App ist eine Slack Clone App. Sie revolutioniert die Teamkommunikation mit intuitiver Oberfläche, Echtzeit-Messaging und robuster Kanalorganisation. Zeigt den Wunsch, neue Technologien zu lernen und Fähigkeiten kontinuierlich zu verbessern."
+        }
+    }
 }

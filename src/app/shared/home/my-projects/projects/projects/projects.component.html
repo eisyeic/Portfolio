@@ -1,59 +1,47 @@
 <div id="my-projects" class="projects">
-    <h2>My Projects</h2>
+    <h2>{{ 'PROJECTS.TITLE' | translate }}</h2>
     <div class="nav">
-        <span class="tab" [class.active]="activeTab === 1" (click)="setTab(1)">1. Pokedex</span>
-        <span class="tab" [class.active]="activeTab === 2" (click)="setTab(2)">2. El pollo loco</span>
-        <span class="tab" [class.active]="activeTab === 3" (click)="setTab(3)">3. Join</span>
-        <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">4. Ongoing Project</span>
+        <span class="tab" [class.active]="activeTab === 1" (click)="setTab(1)">{{ 'PROJECTS.TABS.POKEDEX' | translate }}</span>
+        <span class="tab" [class.active]="activeTab === 2" (click)="setTab(2)">{{ 'PROJECTS.TABS.ELPOLLOLOCO' | translate }}</span>
+        <span class="tab" [class.active]="activeTab === 3" (click)="setTab(3)">{{ 'PROJECTS.TABS.JOIN' | translate }}</span>
+        <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">{{ 'PROJECTS.TABS.ONGOING' | translate }}</span>
     </div>
     <div class="content">
         <!-- Tab 1 -->
         <ng-container *ngIf="activeTab === 1">
             <div class="container-left">
-                <!-- Dein aktueller Content für Tab 1 -->
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>About the project</h5>
-                        <span>Duration: 1 weeks</span>
+                        <h5>{{ 'POKEDEX.ABOUT.TITLE' | translate }}</h5>
+                        <span>{{ 'POKEDEX.ABOUT.DURATION' | translate }}</span>
                     </div>
                     <div>
-                        <p>This App is a self-built Pokédex App.
-                            It provides a comprehensive overview of Pokémon with detailed information, intuitive
-                            navigation,
-                            and a clean user interface, all developed independently to showcase strong problem-solving
-                            skills,
-                            structured data handling, and attention to detail.</p>
+                        <p>{{ 'POKEDEX.ABOUT.CONTENT' | translate }}</p>
                     </div>
                 </div>
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>How I have organised my work process</h5>
+                        <h5>{{ 'POKEDEX.WORK.TITLE' | translate }}</h5>
                     </div>
                     <div>
-                        <p>My workflow was carefully structured and self-managed.
-                            I planned features step by step, broke down complex tasks into manageable parts, and
-                            continuously tested and refined the application to ensure clean code, reliability, and
-                            steady progress throughout the project.</p>
+                        <p>{{ 'POKEDEX.WORK.CONTENT' | translate }}</p>
                     </div>
                 </div>
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>What I have learned</h5>
+                        <h5>{{ 'POKEDEX.LEARNED.TITLE' | translate }}</h5>
                     </div>
                     <div>
-                        <p>Through this project, I significantly expanded my skill set.
-                            I improved my ability to work independently, deepened my understanding of structured data
-                            handling and component-based development, and gained valuable experience in planning,
-                            problem-solving, and building scalable applications from scratch.</p>
+                        <p>{{ 'POKEDEX.LEARNED.CONTENT' | translate }}</p>
                     </div>
                 </div>
             </div>
             <div class="container-right">
                 <div class="picture-area">
-                    <span>Technologies</span>
+                    <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
@@ -61,59 +49,48 @@
                     </div>
                     <img class="screen" src="/assets/img/project/pokedex-screen.JPG" alt="Pokedex Screen">
                     <div class="button-box">
-                        <a href="https://pokedex-1337.netlify.app/" target="_blank">Live Test</a>
+                        <a href="https://pokedex-1337.netlify.app/" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }}</a>
                         <a href="https://github.com/eisyeic/Pokedex.git" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
         </ng-container>
+
         <!-- Tab 2 -->
         <ng-container *ngIf="activeTab === 2">
             <div class="container-left">
-
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>About the project</h5>
-                        <span>Duration: 5 weeks</span>
+                        <h5>{{ 'ELPOLLO.ABOUT.TITLE' | translate }}</h5>
+                        <span>{{ 'ELPOLLO.ABOUT.DURATION' | translate }}</span>
                     </div>
                     <div>
-                        <p>This App is a self-built Pokédex App.
-                            It provides a comprehensive overview of Pokémon with detailed information, intuitive
-                            navigation,
-                            and a clean user interface, all developed independently to showcase strong problem-solving
-                            skills,
-                            structured data handling, and attention to detail.</p>
+                        <p>{{ 'ELPOLLO.ABOUT.CONTENT' | translate }}</p>
                     </div>
                 </div>
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>How I have organised my work process</h5>
+                        <h5>{{ 'ELPOLLO.WORK.TITLE' | translate }}</h5>
                     </div>
                     <div>
-                        <p>My workflow was carefully structured and self-managed.
-                            I planned features step by step, broke down complex tasks into manageable parts, and
-                            continuously tested and refined the application to ensure clean code, reliability, and
-                            steady progress throughout the project.</p>
+                        <p>{{ 'ELPOLLO.WORK.CONTENT' | translate }}</p>
                     </div>
                 </div>
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>What I have learned</h5>
+                        <h5>{{ 'ELPOLLO.LEARNED.TITLE' | translate }}</h5>
                     </div>
                     <div>
-                        <p>Through this project, I significantly expanded my skill set.
-                            I improved my ability to work independently, deepened my understanding of structured data
-                            handling and component-based development, and gained valuable experience in planning,
-                            problem-solving, and building scalable applications from scratch.</p>
+                        <p>{{ 'ELPOLLO.LEARNED.CONTENT' | translate }}</p>
                     </div>
                 </div>
             </div>
             <div class="container-right">
                 <div class="picture-area">
-                    <span>Technologies</span>
+                    <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
@@ -121,51 +98,48 @@
                     </div>
                     <img class="screen-cover" src="/assets/img/project/el-pollp-loco-screen.png" alt="El Pollp Loco Screen">
                     <div class="button-box">
-                        <a href="https://pokedex-1337.netlify.app/" target="_blank">Live Test</a>
+                        <a href="https://pokedex-1337.netlify.app/" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }}</a>
                         <a href="https://github.com/eisyeic/El-Pollo-Loco.git" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
         </ng-container>
+
         <!-- Tab 3 -->
         <ng-container *ngIf="activeTab === 3">
             <div class="container-left">
-                <!-- Gleicher Aufbau, Content für Tab 3 einfügen -->
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>About the project</h5>
-                        <span>Duration: 5 weeks</span>
+                        <h5>{{ 'JOIN.ABOUT.TITLE' | translate }}</h5>
+                        <span>{{ 'JOIN.ABOUT.DURATION' | translate }}</span>
                     </div>
                     <div>
-                        <p>A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and
-                            poison bottles to fight against the chicken.</p>
+                        <p>{{ 'JOIN.ABOUT.CONTENT' | translate }}</p>
                     </div>
                 </div>
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>How I have organised my work process</h5>
+                        <h5>{{ 'JOIN.WORK.TITLE' | translate }}</h5>
                     </div>
                     <div>
-                        <p>How do you keep your code clean and maintainable? Have you broken the project down into
-                            reusable modules or components? Focus on documentation, naming files, variables, classes and
-                            testing.</p>
+                        <p>{{ 'JOIN.WORK.CONTENT' | translate }}</p>
                     </div>
                 </div>
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>What I have learnt</h5>
+                        <h5>{{ 'JOIN.LEARNED.TITLE' | translate }}</h5>
                     </div>
                     <div>
-                        <p>How many people were in the team </p>
+                        <p>{{ 'JOIN.LEARNED.CONTENT' | translate }}</p>
                     </div>
                 </div>
             </div>
             <div class="container-right">
                 <div class="picture-area">
-                    <span>Technologies</span>
+                    <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
@@ -173,44 +147,37 @@
                     </div>
                     <img class="screen-cover" src="/assets/img/project/join-screen.JPG" alt="Join Screen">
                     <div class="button-box">
-                        <a href="https://pokedex-1337.netlify.app/" target="_blank">Live Test</a>
+                        <a href="https://pokedex-1337.netlify.app/" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }}</a>
                         <a href="https://github.com/eisyeic/Join.git" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
         </ng-container>
+
         <!-- Tab 4 -->
         <ng-container *ngIf="activeTab === 4">
             <div class="container-left">
-
                 <div class="text-area">
                     <div class="text-title">
                         <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>About the project</h5>
-                        <span>Duration: 3 weeks</span>
+                        <h5>{{ 'ONGOING.ABOUT.TITLE' | translate }}</h5>
+                        <span>{{ 'ONGOING.ABOUT.DURATION' | translate }}</span>
                     </div>
                     <div>
-                        <p>This App is a Slack Clone App. It revolutionizes team communication and collaboration with
-                            its intuitive interface, real-time messaging and robust channel organization.</p>
+                        <p>{{ 'ONGOING.ABOUT.CONTENT' | translate }}</p>
                     </div>
-                </div>
-
-                <div>
-                    <p>How many people were in the team and what was your role? Describe your tasks in 1-2
-                        sentences. It is nice to mention a good teamwork and cooperation.</p>
                 </div>
             </div>
-
             <div class="container-right">
                 <div class="picture-area">
-                    <span>Technologies</span>
+                    <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
                     <div class="technologies">
-                        <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
-                        <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
-                        <img src="/assets/img/project/javascript-icon.svg" alt="Javascript Icon">
+                        <img src="/assets/img/project/angular-icon.svg" alt="Angular Icon">
+                        <img src="/assets/img/project/typescript-icon.svg" alt="Typescript Icon">
+                        <img src="/assets/img/project/firebase-icon.svg" alt="Firebase Icon">
                     </div>
                     <div class="white-screen">
-                        <h5>Cooming soon ...</h5>
+                        <h5>{{ 'PROJECTS.COMING_SOON' | translate }}</h5>
                     </div>
                 </div>
             </div>
