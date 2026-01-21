@@ -4,6 +4,17 @@
     <p>{{ 'FOOTER_COPYRIGHT' | translate }}</p>
   </div>
 
+  <div [ngStyle]="{'display': 'none'}" class="sozial-media-mobile">
+    <a href="mailto:davideisenbarth@gmail.com">
+      <img src="/assets/img/footer/email-mobile.svg"
+        alt="email icon mobile"></a>
+    <a href="https://github.com/eisyeic">
+      <img src="/assets/img/footer/github-mobile.svg" alt="github icon mobile"></a>
+    <a href="https://www.linkedin.com/in/david-eisenbarth-6113962a5/">
+      <img src="/assets/img/footer/linkedin-mobile.svg"
+        alt="linkedin icon mobile"></a>
+  </div>
+
   <a class="footer-logo" (click)="onLogoClick()" style="cursor: pointer;">
     <img src="/assets/img/navbar/logo-default.png" alt="logo-default">
   </a>

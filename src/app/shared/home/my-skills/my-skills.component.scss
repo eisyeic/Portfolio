@@ -10,6 +10,11 @@
         margin-top: 0;
         color: rgb(137, 187, 217);
     }
+
+    @media screen and (max-width: 1340px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 .my-skills-box {

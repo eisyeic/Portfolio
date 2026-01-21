@@ -11,6 +11,11 @@
         color: rgb(137, 186, 217);
         font-size: 32px;
     }
+
+    @media screen and (max-width: 1340px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 .bubble-container {

@@ -67,7 +67,7 @@ body {
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
@@ -75,7 +75,7 @@ body {
   display: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -139,3 +139,20 @@ h4 {
   font-weight: 400;
   font-style: normal;
 }
+
+// Media Query
+// ... existing code ...
+@media (max-width: 1240px) {
+
+  a,
+  .sozial-media-button,
+  .email-box,
+  .github-box,
+  .linkedin-box,
+  img,
+  .arrow-down {
+    cursor: default !important;
+  }
+}
+
+// ... existing code ...

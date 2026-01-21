@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+
+    <title>El Pollo Loco</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/6_salsa_bottle/bottle_rotation/1_bottle_rotation.png" sizes="48x48">
+    <link rel="stylesheet" href="legal-notice.html">
+    <link rel="stylesheet" href="privacy-policy.html">
+
+    <script src="./js/models/drawable-objects.class.js"></script>
+    <script src="./js/models/movable-object.class.js"></script>
+    <script src="./js/models/coins.class.js"></script>
+    <script src="./js/models/bottle.class.js"></script>
+    <script src="./js/models/character.class.js"></script>
+    <script src="./js/models/chicken.class.js"></script>
+    <script src="js/models/chicken-baby.class.js"></script>
+    <script src="./js/models/cloud.class.js"></script>
+    <script src="./js/models/bottle-bar.class.js"></script>
+    <script src="./js/models/coins-bar.class.js"></script>
+    <script src="./js/models/endboss-bar.class.js"></script>
+    <script src="./js/models/status-bar.class.js"></script>
+    <script src="./js/models/collision-manager.class.js"></script>
+    <script src="./js/models/screen-manager.class.js"></script>
+    <script src="./js/models/world.class.js"></script>
+    <script src="./js/models/background-object.class.js"></script>
+    <script src="./js/models/keyboard.class.js"></script>
+    <script src="./js/models/level.class.js"></script>
+    <script src="./js/models/throwable-oject.class.js"></script>
+    <script src="./js/models/endboss.class.js"></script>
+    <script src="js/models/end-image.class.js"></script>
+    <script src="js/models/start-image.class.js"></script>
+    <script src="./levels/level1.js"></script>
+    <script src="./js/models/fullscreen-manager.class.js"></script>
+    <script src="./js/game.js"></script>
+
+</head>
+
+<body onload="init()">
+
+    <div id="rotate-overlay" class="rotate-overlay d-none">
+        <div class="rotate-message">
+            <h2>Turn your Device to play</h2>
+            <div class="rotate-icon">📱↻</div>
+        </div>
+    </div>
+
+
+    <h1>EL POLLO LOCO</h1>
+    <div id="canvas-screen">
+        <div class="game-tools" id="game-tools-box">
+            <img src="img/icons/info.png" alt="Info Icon" onclick="openInfo()">
+            <img src="img/icons/fullscreen-start.png" alt="Fullscreen Start Icon" id="fullscreen-start-icon"
+                onclick="toggleFullscreen()">
+            <img src="img/icons/fullscreen-end.png" alt="Fullscreen End Icon" class="d-none" id="fullscreen-end-icon"
+                onclick="toggleFullscreen()">
+
+            <img src="img/icons/sound-on.png" alt="Sound On Icon" id="sound-on-icon" onclick="toggleSound()">
+            <img src="img/icons/sound-off.png" alt="Sound Off Icon" class="d-none" id="sound-off-icon"
+                onclick="toggleSound()">
+
+
+            <img src="img/icons/restart.png" alt="Restart Icon" onclick="world.restartGame()">
+        </div>
+
+        <div class="game-info d-none" id="game-info-box">
+            <a href="instructions.html " class="menu-button"><img src="img/icons/instructions.png"
+                    alt="Instructions"></a>
+            <a href="privacy-policy.html" class="menu-button">
+                <img src="img/icons/privacy-policy.png" alt="Privacy Policy">
+            </a>
+            <a href="legal-notice.html" class="menu-button">
+                <img src="img/icons/legal-notice.png" alt="Legal Notice">
+            </a>
+        </div>
+
+
+        <canvas id="canvas" width="720" height="480"></canvas>
+
+        <div class="smart-elements">
+            <div class="arrow-icons">
+                <img src="img/icons/left.png" id="btn-left" alt="Left Icon">
+                <img src="img/icons/right.png" id="btn-right" alt="Right Icon">
+            </div>
+            <div class="action-icons">
+                <img src="img/icons/jump.png" id="btn-jump" alt="Jump Icon">
+                <img src="img/icons/bottle.png" id="btn-bottle" alt="Bottle Icon">
+            </div>
+        </div>
+    </div>
+    <div class="keyboard-elements">
+        <img src="img/icons/strg.png" alt="Strg Info">
+        <img src="img/icons/space.png" alt="Space Info">
+        <img src="img/icons/arrow.png" alt="Arrow Info">
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <link rel="icon" type="" href="./assers/pokemon-4635112_640.png">
+
+    <script src="./script.js"></script>
+    <script src="./scripts/templates.js"></script>
+
+    <link rel="stylesheet" href="./fonts/pt_sans.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/pokemon-container.css">
+    <link rel="stylesheet" href="./styles/mediaquery.css">
+
+</head>
+
+<body onload="init()">
+    <div id="overlay-click" class="overlay-style overlay-d-none" onclick="closeDetails()">
+        <div class="pokemon-details-container" id="pokemon-details-container" onclick="event.stopPropagation()"></div>
+    </div>
+    <header>
+        <div class="header-container">
+            <div class="headline-header">
+                <a href="index.html">
+                    <img src="./assers/pokemon-4635112_640.png" alt="Pokeball">
+                    <img src="./assers/Pokedex-ueberschrift.png" alt="Pokedex">
+                </a>
+            </div>
+            <div class="input-header">
+                <input id="search-input" type="text" placeholder="Search..." onkeyup="filterPokemon()">
+                <span id="search-hint" class="search-hint d-none"></span>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="main-container" id="main-elements">
+
+        </section>
+        <section class="load-window-container d-none" id="load-window-container">
+            <div class="load-window-box">
+                <img src="./assers/pokemon-4635112_640.png" alt="Load Pokemon Ball">
+                <p>Loading Pokemons</p>
+            </div>
+        </section>
+        <section class="next-pokemon-button-container">
+            <button class="next-pokemon-button" id="next-pokemon" onclick="loadMorePokemon()">MORE POKEMON</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Designed by David Eisenbarth</p>
+    </footer>
+</body>
+
+</html>
