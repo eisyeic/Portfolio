@@ -1,5 +1,10 @@
 <div class="say-about-me">
-  <h4>{{ 'TESTIMONIALS_TITLE' | translate }}</h4>
+  <h4 class="h4-desktop">{{ 'TESTIMONIALS_TITLE' | translate }}</h4>
+
+  <div class="h4-mobile" [ngStyle]="{'display': 'none'}">
+    <h4>{{ 'TESTIMONIALS_TITLE_MOBILE' | translate }}</h4>
+    <p>{{ 'TESTIMONIAL_Subtitle_MOBILE' | translate }}</p>
+  </div>
 
   <div class="bubble-container">
 
@@ -8,23 +13,9 @@
         <h5>Sahra Mueller</h5>
         <h6>
           {{ 'TESTIMONIAL_PROJECT' | translate }}
-          <a href="#">Pokedex</a>
+          <a href="/assets/projects/pokedex/index.html" target="_blank">Pokedex</a>
         </h6>
         <p>{{ 'TESTIMONIAL_1_TEXT' | translate }}</p>
-        <a class="linkedin" href="https://www.linkedin.com/">
-          {{ 'TESTIMONIAL_LINKEDIN' | translate }}
-        </a>
-      </div>
-    </div>
-
-    <div class="bubble-box">
-      <div class="bubble-text">
-        <h5>James Rugman</h5>
-        <h6>
-          {{ 'TESTIMONIAL_PROJECT' | translate }}
-          <a href="#">Join</a>
-        </h6>
-        <p>{{ 'TESTIMONIAL_2_TEXT' | translate }}</p>
         <a class="linkedin" href="https://www.linkedin.com/">
           {{ 'TESTIMONIAL_LINKEDIN' | translate }}
         </a>
@@ -36,7 +27,7 @@
         <h5>Evelyn Marx</h5>
         <h6>
           {{ 'TESTIMONIAL_PROJECT' | translate }}
-          <a href="#">El Pollo Loco</a>
+          <a href="/assets/projects/el-pollo-loco/index.html" target="_blank">El Pollo Loco</a>
         </h6>
         <p>{{ 'TESTIMONIAL_3_TEXT' | translate }}</p>
         <a class="linkedin" href="https://www.linkedin.com/">
@@ -45,5 +36,18 @@
       </div>
     </div>
 
+    <div class="bubble-box">
+      <div class="bubble-text">
+        <h5>James Rugman</h5>
+        <h6>
+          {{ 'TESTIMONIAL_PROJECT' | translate }}
+          <a href="/assets/projects/join/index.html" target="_blank">Join</a>
+        </h6>
+        <p>{{ 'TESTIMONIAL_2_TEXT' | translate }}</p>
+        <a class="linkedin" href="https://www.linkedin.com/">
+          {{ 'TESTIMONIAL_LINKEDIN' | translate }}
+        </a>
+      </div>
+    </div>
   </div>
 </div>

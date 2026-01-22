@@ -64,6 +64,7 @@
     "WHY_ME_BUTTON": "Let's talk!",
     "SKILLS_TITLE": "My Skills",
     "SKILLS_LEARNING_TITLE": "I am currently learning",
+    "SKILLS_LEARNING_TITLE_MOBILE": "What I am currently learning",
     "SKILLS_LEARNING_TEXT": "I am motivated to continually improve my skills, implement innovative solutions and stay up to date with new technologies.",
     "CONTACT_TITLE": "Contact me",
     "CONTACT_DESCRIPTION": "Feel free to get in touch with job offers or opportunities such as freelance work, permanent roles, or collaborations. I am interested in contributing my skills to meaningful projects and adding value through reliable, high-quality work.",
@@ -79,6 +80,8 @@
     "FORM_POPUP_SUCCESS": "The message has been transmitted.",
     "FORM_POPUP_OK": "OK",
     "TESTIMONIALS_TITLE": "Need a team player? Here’s what my colleagues say about me",
+    "TESTIMONIALS_TITLE_MOBILE": "Need a team player?",
+    "TESTIMONIAL_Subtitle_MOBILE": "Here you can learn more about my colleagues and their experiences",
     "TESTIMONIAL_PROJECT": "Project",
     "TESTIMONIAL_LINKEDIN": "LinkedIn Profile",
     "TESTIMONIAL_1_TEXT": "David had to develop, format and deliver content in a single project. He is a reliable and friendly person.",
@@ -90,7 +93,8 @@
             "POKEDEX": "1. Pokedex",
             "ELPOLLOLOCO": "2. El pollo loco",
             "JOIN": "3. Join",
-            "ONGOING": "4. Ongoing Project"
+            "ONGOING": "4. Ongoing Project",
+            "PROJECT": "Project"
         },
         "TECHNOLOGIES": "Technologies",
         "LIVE_TEST": "Live Test",
@@ -100,7 +104,8 @@
         "ABOUT": {
             "TITLE": "About the project",
             "DURATION": "Duration: 1 weeks",
-            "CONTENT": "This App is a self-built Pokédex App. It provides a comprehensive overview of Pokémon with detailed information, intuitive navigation, and a clean user interface, all developed independently to showcase strong problem-solving skills, structured data handling, and attention to detail."
+            "CONTENT": "This App is a self-built Pokédex App. It provides a comprehensive overview of Pokémon with detailed information, intuitive navigation, and a clean user interface, all developed independently to showcase strong problem-solving skills, structured data handling, and attention to detail.",
+            "MOBILE": "Technologies: HTML, CSS, JavaScript"            
         },
         "WORK": {
             "TITLE": "How I have organised my work process",
@@ -115,7 +120,8 @@
         "ABOUT": {
             "TITLE": "About the project",
             "DURATION": "Duration: 5 weeks",
-            "CONTENT": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
+            "CONTENT": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken.",
+            "MOBILE": "Technologies: HTML, CSS, JavaScript"
         },
         "WORK": {
             "TITLE": "How I have organised my work process",
@@ -130,7 +136,8 @@
         "ABOUT": {
             "TITLE": "About the project",
             "DURATION": "Duration: 5 weeks",
-            "CONTENT": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+            "CONTENT": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+            "Mobile": "Technologies: HTML, CSS, JavaScript"
         },
         "WORK": {
             "TITLE": "How I have organised my work process",
@@ -145,7 +152,9 @@
         "ABOUT": {
             "TITLE": "About the project",
             "DURATION": "Duration: 3 weeks",
-            "CONTENT": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. Show a desire to learn new technologies and continually improve your skills."
+            "CONTENT": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. Show a desire to learn new technologies and continually improve your skills.",
+            "MOBILE_P": "Ongoing Project",
+            "MOBILE": "Technologies: Angular, TypeScript, Firebase"
         }
     }
 }

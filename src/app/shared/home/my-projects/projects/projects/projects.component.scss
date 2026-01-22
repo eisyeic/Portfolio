@@ -22,6 +22,35 @@
         font-weight: 500;
         color: rgb(137, 187, 217);
     }
+
+    @media screen and (max-width: 1040px) {
+        display: none;
+    }
+}
+
+.nav-mobile {
+    display: none;
+    justify-content: space-between;
+
+    span {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 1040px) {
+        display: flex;
+        width: 100%;
+    }
+
+    span {
+        font-size: 30px;
+        font-weight: 500;
+        color: rgb(137, 187, 217);
+    }
+
+    @media screen and (max-width: 1040px) {
+        display: flex;
+    }
 }
 
 .tab {
@@ -37,6 +66,10 @@
 
     &:hover {
         color: white !important;
+    }
+
+    @media screen and (max-width: 1040px) {
+        height: 60px;
     }
 }
 
@@ -59,6 +92,11 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    @media screen and (max-width: 1040px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .container-left {
@@ -66,6 +104,10 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1040px) {
+        padding-top: 50px;
+    }
 }
 
 .container-right {
@@ -73,6 +115,10 @@
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+
+    @media screen and (max-width: 1040px) {
+        margin-left: 0;
+    }
 }
 
 .text-area {
@@ -96,6 +142,10 @@
         width: 29px;
         height: 26px;
     }
+
+    @media screen and (max-width: 1040px) {
+        padding-left: 0;
+    }
 }
 
 .text-title {
@@ -106,6 +156,12 @@
     span {
         font-size: 18px;
         margin: 0;
+    }
+
+    @media screen and (max-width: 1040px) {
+        span {
+            display: none;
+        }
     }
 }
 
@@ -120,6 +176,29 @@
         font-size: 18px;
         padding-top: 20px;
     }
+
+    h3 {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    @media screen and (max-width: 1040px) {
+        span {
+            display: none;
+        }
+
+        h3 {
+            display: flex;
+            color: rgb(137, 187, 217);
+        }
+
+        p {
+            display: flex;
+        }
+    }
 }
 
 .technologies {
@@ -133,6 +212,10 @@
         width: 100%;
         height: 36px;
         object-fit: contain;
+    }
+
+    @media screen and (max-width: 1040px) {
+        display: none;
     }
 }
 
@@ -189,6 +272,49 @@
             background-color: rgb(137, 187, 217);
             color: white;
             cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 1040px) {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1040px) {
+    .picture-area {
+        align-items: flex-start; // Alles linksbündig
+        position: relative;
+
+        .screen,
+        .screen-cover {
+            display: block;
+            margin-left: 50%;
+            transform: translateX(-50%); // Bild mittig
+        }
+    }
+}
+
+.button-box-mobile {
+    display: none;
+
+    @media screen and (max-width: 1040px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 50px;
+
+        a {
+            width: 120px;
+            height: 50px;
+            border-radius: 30px;
+            border: 1.5px solid rgb(137, 187, 217);
+            font-size: 18px;
+            color: rgb(137, 187, 217);
+            background-color: transparent;
+            text-align: center;
+            line-height: 50px;
         }
     }
 }

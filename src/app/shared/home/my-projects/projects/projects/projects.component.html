@@ -1,10 +1,24 @@
 <div id="my-projects" class="projects">
     <h2>{{ 'PROJECTS.TITLE' | translate }}</h2>
     <div class="nav">
-        <span class="tab" [class.active]="activeTab === 1" (click)="setTab(1)">{{ 'PROJECTS.TABS.POKEDEX' | translate }}</span>
-        <span class="tab" [class.active]="activeTab === 2" (click)="setTab(2)">{{ 'PROJECTS.TABS.ELPOLLOLOCO' | translate }}</span>
-        <span class="tab" [class.active]="activeTab === 3" (click)="setTab(3)">{{ 'PROJECTS.TABS.JOIN' | translate }}</span>
-        <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">{{ 'PROJECTS.TABS.ONGOING' | translate }}</span>
+        <span class="tab" [class.active]="activeTab === 1" (click)="setTab(1)">{{ 'PROJECTS.TABS.POKEDEX' | translate
+            }}</span>
+        <span class="tab" [class.active]="activeTab === 2" (click)="setTab(2)">{{ 'PROJECTS.TABS.ELPOLLOLOCO' |
+            translate }}</span>
+        <span class="tab" [class.active]="activeTab === 3" (click)="setTab(3)">{{ 'PROJECTS.TABS.JOIN' | translate
+            }}</span>
+        <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">{{ 'PROJECTS.TABS.ONGOING' | translate
+            }}</span>
+    </div>
+    <div class="nav-mobile">
+        <span class="tab" [class.active]="activeTab === 1" (click)="setTab(1)">1.{{ 'PROJECTS.TABS.PROJECT' | translate
+            }}</span>
+        <span class="tab" [class.active]="activeTab === 2" (click)="setTab(2)">2.{{ 'PROJECTS.TABS.PROJECT' | translate
+            }}</span>
+        <span class="tab" [class.active]="activeTab === 3" (click)="setTab(3)">3.{{ 'PROJECTS.TABS.PROJECT' | translate
+            }}</span>
+        <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">4.{{ 'PROJECTS.TABS.PROJECT' | translate
+            }}</span>
     </div>
     <div class="content">
         <!-- Tab 1 -->
@@ -37,11 +51,18 @@
                     <div>
                         <p>{{ 'POKEDEX.LEARNED.CONTENT' | translate }}</p>
                     </div>
+                    <div class="button-box-mobile">
+                        <a href="/assets/projects/pokedex/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' |
+                            translate }}</a>
+                        <a href="https://github.com/eisyeic/Pokedex.git" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="container-right">
                 <div class="picture-area">
+                    <h3>POKEDEX</h3>
                     <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
+                    <p>{{ 'POKEDEX.ABOUT.MOBILE' | translate }}</p>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
@@ -49,7 +70,8 @@
                     </div>
                     <img class="screen" src="/assets/img/project/pokedex-screen.JPG" alt="Pokedex Screen">
                     <div class="button-box">
-                        <a href="/assets/projects/pokedex/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }}</a>
+                        <a href="/assets/projects/pokedex/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' |
+                            translate }}</a>
                         <a href="https://github.com/eisyeic/Pokedex.git" target="_blank">GitHub</a>
                     </div>
                 </div>
@@ -86,19 +108,28 @@
                     <div>
                         <p>{{ 'ELPOLLO.LEARNED.CONTENT' | translate }}</p>
                     </div>
+                    <div class="button-box-mobile">
+                        <a href="/assets/projects/el-pollo-loco/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' |
+                            translate }}</a>
+                        <a href="https://github.com/eisyeic/El-Pollo-Loco.git" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="container-right">
                 <div class="picture-area">
+                    <h3>EL POLLO LOC</h3>
                     <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
+                    <p>{{ 'ELPOLLO.ABOUT.MOBILE' | translate }}</p>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
                         <img src="/assets/img/project/javascript-icon.svg" alt="Javascript Icon">
                     </div>
-                    <img class="screen-cover" src="/assets/img/project/el-pollp-loco-screen.png" alt="El Pollp Loco Screen">
+                    <img class="screen-cover" src="/assets/img/project/el-pollp-loco-screen.png"
+                        alt="El Pollp Loco Screen">
                     <div class="button-box">
-                        <a href="/assets/projects/el-pollo-loco/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }}</a>
+                        <a href="/assets/projects/el-pollo-loco/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' |
+                            translate }}</a>
                         <a href="https://github.com/eisyeic/El-Pollo-Loco.git" target="_blank">GitHub</a>
                     </div>
                 </div>
@@ -135,11 +166,18 @@
                     <div>
                         <p>{{ 'JOIN.LEARNED.CONTENT' | translate }}</p>
                     </div>
+                    <div class="button-box-mobile">
+                        <a href="/assets/projects/join/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate
+                            }}</a>
+                        <a href="https://github.com/eisyeic/Join.git" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="container-right">
                 <div class="picture-area">
+                    <h3>JOIN</h3>
                     <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
+                    <p>{{ 'JOIN.ABOUT.MOBILE' | translate }}</p>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
@@ -147,7 +185,8 @@
                     </div>
                     <img class="screen-cover" src="/assets/img/project/join-screen.JPG" alt="Join Screen">
                     <div class="button-box">
-                        <a href="/assets/projects/join/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }}</a>
+                        <a href="/assets/projects/join/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate
+                            }}</a>
                         <a href="https://github.com/eisyeic/Join.git" target="_blank">GitHub</a>
                     </div>
                 </div>
@@ -170,7 +209,9 @@
             </div>
             <div class="container-right">
                 <div class="picture-area">
+                    <h3>{{ 'ONGOING.ABOUT.MOBILE_P' | translate }}</h3>
                     <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
+                    <p>{{ 'ONGOING.ABOUT.MOBILE' | translate }}</p>
                     <div class="technologies">
                         <img src="/assets/img/project/angular-icon.svg" alt="Angular Icon">
                         <img src="/assets/img/project/typescript-icon.svg" alt="Typescript Icon">

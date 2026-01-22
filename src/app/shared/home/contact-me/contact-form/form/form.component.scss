@@ -10,6 +10,11 @@
         padding-left: 200px;
         padding-right: 200px;
     }
+
+    @media screen and (max-width: 1040px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 a {
@@ -18,12 +23,22 @@ a {
 
 .form-container {
     width: 100%;
+
+    @media screen and (max-width: 1040px) {
+        .input-label {
+            display: none;
+        }
+    }
 }
 
 .row {
     display: flex;
     gap: 50px;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 1040px) {
+        flex-direction: column;
+    }
 }
 
 .field {
@@ -74,6 +89,12 @@ textarea::placeholder {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+
+    @media screen and (max-width: 1040px) {
+        position: relative;
+        height: 100px;
+        align-items: flex-start;
+    }
 }
 
 .checkbox {
@@ -106,6 +127,12 @@ button {
     border-radius: 50px;
     cursor: not-allowed;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+    @media screen and (max-width: 1040px) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
 
 button:disabled {
