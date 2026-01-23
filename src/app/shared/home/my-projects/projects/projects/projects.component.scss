@@ -96,6 +96,7 @@
     @media screen and (max-width: 1040px) {
         flex-direction: column-reverse;
         align-items: center;
+        border-radius: 0 30px 30px 30px;
     }
 }
 
@@ -186,6 +187,8 @@
     }
 
     @media screen and (max-width: 1040px) {
+        gap: 0;
+
         span {
             display: none;
         }
@@ -283,14 +286,21 @@
 
 @media screen and (max-width: 1040px) {
     .picture-area {
-        align-items: flex-start; // Alles linksbündig
+        align-items: flex-start;
         position: relative;
 
         .screen,
-        .screen-cover {
+        .screen-cover,
+        .white-screen {
             display: block;
             margin-left: 50%;
-            transform: translateX(-50%); // Bild mittig
+            transform: translateX(-50%);
+        }
+
+        .white-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

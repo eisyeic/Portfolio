@@ -305,3 +305,17 @@ header {
     padding-top: 0;
   }
 }
+
+.navbar-mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100px;
+    width: 100%;
+
+    @media screen and (max-width: 1240px) {
+        display: flex;
+    }
+}

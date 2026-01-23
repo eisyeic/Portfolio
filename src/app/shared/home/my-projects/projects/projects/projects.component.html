@@ -20,7 +20,8 @@
         <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">4.{{ 'PROJECTS.TABS.PROJECT' | translate
             }}</span>
     </div>
-    <div class="content">
+    
+    <div class="content" [style.border-radius]="contentBorderRadius">
         <!-- Tab 1 -->
         <ng-container *ngIf="activeTab === 1">
             <div class="container-left">
@@ -63,6 +64,7 @@
                     <h3>POKEDEX</h3>
                     <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
                     <p>{{ 'POKEDEX.ABOUT.MOBILE' | translate }}</p>
+                    <p>{{ 'POKEDEX.ABOUT.MOBILE_DURATION' | translate }}</p>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
@@ -120,6 +122,7 @@
                     <h3>EL POLLO LOC</h3>
                     <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
                     <p>{{ 'ELPOLLO.ABOUT.MOBILE' | translate }}</p>
+                    <p>{{ 'ELPOLLO.ABOUT.MOBILE_DURATION' | translate }}</p>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
@@ -178,6 +181,7 @@
                     <h3>JOIN</h3>
                     <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
                     <p>{{ 'JOIN.ABOUT.MOBILE' | translate }}</p>
+                    <p>{{ 'JOIN.ABOUT.MOBILE_DURATION' | translate }}</p>
                     <div class="technologies">
                         <img src="/assets/img/project/html-icon.svg" alt="Html Icon">
                         <img src="/assets/img/project/css-icon.svg" alt="Css Icon">
@@ -212,6 +216,7 @@
                     <h3>{{ 'ONGOING.ABOUT.MOBILE_P' | translate }}</h3>
                     <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
                     <p>{{ 'ONGOING.ABOUT.MOBILE' | translate }}</p>
+                    <p>{{ 'ONGOING.ABOUT.MOBILE_DURATION' | translate }}</p>
                     <div class="technologies">
                         <img src="/assets/img/project/angular-icon.svg" alt="Angular Icon">
                         <img src="/assets/img/project/typescript-icon.svg" alt="Typescript Icon">

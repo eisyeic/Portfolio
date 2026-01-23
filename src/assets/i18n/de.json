@@ -105,7 +105,8 @@
             "TITLE": "Über das Projekt",
             "DURATION": "Dauer: 1 Woche",
             "CONTENT": "Diese App ist ein selbstgebautes Pokédex-App. Sie bietet einen umfassenden Überblick über Pokémon mit detaillierten Informationen, intuitiver Navigation und sauberem Interface, alles eigenständig entwickelt, um starke Problemlösungsfähigkeiten, strukturiertes Arbeiten und Liebe zum Detail zu demonstrieren.",
-            "MOBILE": "Technologien: HTML, CSS, JavaScript <br> Dauer: 1 Woche"
+            "MOBILE": "Technologien: HTML, CSS, JavaScript",
+            "MOBILE_DURATION": "Dauer: 1 Woche"
         },
         "WORK": {
             "TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
@@ -121,7 +122,8 @@
             "TITLE": "Über das Projekt",
             "DURATION": "Dauer: 5 Wochen",
             "CONTENT": "Ein einfaches Jump-and-Run-Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen.",
-            "MOBILE": "Technologien: HTML, CSS, JavaScript <br> Dauer: 5 Wochen"
+            "MOBILE": "Technologien: HTML, CSS, JavaScript",
+            "MOBILE_DURATION": "Dauer: 5 Wochen"
         },
         "WORK": {
             "TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
@@ -137,7 +139,8 @@
             "TITLE": "Über das Projekt",
             "DURATION": "Dauer: 5 Wochen",
             "CONTENT": "Task Manager inspiriert vom Kanban-System. Aufgaben erstellen und organisieren mit Drag-and-Drop, Benutzer und Kategorien zuweisen.",
-            "MOBILE": "Technologien: HTML, CSS, JavaScript"
+            "MOBILE": "Technologien: HTML, CSS, JavaScript",
+            "MOBILE_DURATION": "Dauer: 5 Wochen"
         },
         "WORK": {
             "TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
@@ -154,7 +157,8 @@
             "DURATION": "Dauer: 3 Wochen",
             "CONTENT": "Diese App ist eine Slack Clone App. Sie revolutioniert die Teamkommunikation mit intuitiver Oberfläche, Echtzeit-Messaging und robuster Kanalorganisation. Zeigt den Wunsch, neue Technologien zu lernen und Fähigkeiten kontinuierlich zu verbessern.",
             "MOBILE_P": "Laufendes Projekt",
-            "MOBILE": "Technologien: Angular, TypeScript, Firebase"
+            "MOBILE": "Technologien: Angular, TypeScript, Firebase",
+            "MOBILE_DURATION": "Dauer: 3 Wochen"
         }
     }
 }
