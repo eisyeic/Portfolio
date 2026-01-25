@@ -25,6 +25,7 @@ header {
         align-items: center;
         height: 100vh;
         padding-bottom: 50px;
+        padding-top: 50px;
 
         .logo-container {
             display: none;
@@ -60,6 +61,7 @@ header {
         .pass-background img {
             display: none;
         }
+
         .pass-image-box {
             height: 100%;
             display: flex;
@@ -69,9 +71,11 @@ header {
             left: auto;
             top: auto;
         }
+
         .pass-img-box img {
             display: none;
         }
+
         .logo-mobile {
             display: flex !important;
             height: 50vh;
@@ -121,6 +125,7 @@ header {
         height: 100%;
         object-fit: contain;
     }
+
     @media screen and (max-width: 1240px) {
         position: inherit;
         top: auto;
@@ -294,28 +299,142 @@ header {
 }
 
 @media screen and (max-width: 1240px) {
-  .pass-img-container,
-  .pass-img-box,
-  .pass-text-box {
-    margin: 0;
-    padding: 0;
-  }
 
-  .header{
-    padding-top: 0;
-  }
+    .pass-img-container,
+    .pass-img-box,
+    .pass-text-box {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        padding-top: 0;
+    }
 }
 
 .navbar-mobile {
     display: none;
     justify-content: space-between;
     align-items: flex-start;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
     height: 100px;
     width: 100%;
 
+    .menu-icon {
+        width: 30px;
+        height: 32px;
+        object-fit: contain;
+    }
+
     @media screen and (max-width: 1240px) {
         display: flex;
+    }
+}
+
+.logo-navbar-mobile {
+    width: 60px;
+    height: 70px;
+    object-fit: contain;
+    position: relative;
+}
+
+.navbar-menu {
+    //display: none;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 100%;
+    height: calc(50vh + 5px);
+    background-image: url('/assets/img/header/bubble_default.png');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    gap: 50px;
+    color: rgb(37, 45, 51);
+    font-size: 22px;
+    font-weight: 400;
+    
+    /* Hinzugefügt, um Klicks durch den Menü-Container zuzulassen */
+    pointer-events: none; 
+
+    a {
+        margin: 0;
+        /* Hinzugefügt, um Links wieder klickbar zu machen */
+        pointer-events: auto; 
+    }
+}
+
+.language-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    img {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+}
+
+.language-aktiv {
+    color: white !important;
+}
+
+// ... existing code ...
+.menu-icon img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-icon img.visible {
+    opacity: 1;
+    z-index: 2;
+}
+
+.menu-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+}
+
+.navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 19;
+}
+
+.navbar-menu {
+    z-index: 20;
+
+    @media screen and (max-width: 1040px) {
+        top: 130px;
     }
 }
