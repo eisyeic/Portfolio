@@ -1,246 +1,327 @@
-.contact-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-    padding-bottom: 0;
+// ===========================
+// CONTACT MAIN CONTAINER
+// ===========================
 
-    @media screen and (max-width: 1340px) {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  padding-bottom: 0;
 }
+
+// ===========================
+// CONTACT TITLE
+// ===========================
 
 .contact-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
 
-    h2 {
-        margin-top: 0;
-        color: rgb(137, 187, 217);
-    }
+  h2 {
+    margin-top: 0;
+    color: rgb(137, 187, 217);
+  }
 }
 
+// ===========================
+// BACK BUTTONS
+// ===========================
+
 .back-button {
-    display: flex;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  width: 50px;
+  height: 100px;
+  cursor: pointer;
+
+  img {
     position: absolute;
     top: 0;
-    right: 0;
-    flex-direction: column;
-    width: 50px;
-    height: 100px;
-    cursor: pointer;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
 
+    &:first-child {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &:last-child {
+      opacity: 0;
+      z-index: 2;
+    }
+  }
+
+  &:hover {
     img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        transition: opacity 0.3s ease;
+      &:first-child {
+        opacity: 0;
+      }
 
-        &:first-child {
-            opacity: 1;
-            z-index: 1;
-        }
-
-        &:last-child {
-            opacity: 0;
-            z-index: 2;
-        }
+      &:last-child {
+        opacity: 1;
+      }
     }
-
-
-    &:hover {
-        img {
-            &:first-child {
-                opacity: 0;
-            }
-
-            &:last-child {
-                opacity: 1;
-            }
-        }
-    }
-
-    @media screen and (max-width: 1040px) {
-        display: none;
-    }
+  }
 }
 
 .back-button-mobile-container {
-    display: none;
-    width: 100%;
-    justify-content: center;
-    margin-top: 100px;
-
-    @media screen and (max-width: 1040px) {
-        display: flex;
-    }
+  display: none;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 .back-button-mobile {
-    display: flex;
-    flex-direction: column;
-    width: 50px;
-    height: 100px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 100px;
+  position: relative;
 
-
-
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
-.contact-text-container {
-    display: flex;
-    gap: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+// ===========================
+// CONTACT CONTENT
+// ===========================
 
-    @media screen and (max-width: 1040px) {
-        flex-direction: column-reverse;
-        padding: 0;
-    }
+.contact-text-container {
+  display: flex;
+  gap: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .text-box {
-    width: 50%;
+  width: 50%;
 
-    p {
-        margin: 0;
-    }
-
-    @media screen and (max-width: 1040px) {
-        width: 100%;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 .info-box {
-    width: 50%;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 50%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-    a {
-        color: white;
-    }
-
-    @media screen and (max-width: 1040px) {
-        width: 100%;
-        flex-direction: column-reverse;
-    }
+  a {
+    color: white;
+  }
 }
 
+// ===========================
+// CONTACT INFORMATION
+// ===========================
+
 .email-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  height: 40px;
+
+  .email-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
     height: 40px;
+    transition: opacity 0.2s;
+    display: none;
 
-    .email-icon {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        transition: opacity 0.2s;
-        display: none;
+    &.default {
+      display: block;
     }
 
-    .email-icon.default {
-        display: block;
+    &.hover,
+    &.active {
+      display: none;
+    }
+  }
+
+  &:hover .email-icon {
+    &.default {
+      display: none;
     }
 
-    .email-icon.hover {
-        display: none;
+    &.hover {
+      display: block;
+    }
+  }
+
+  &:active .email-icon {
+    &.hover {
+      display: none;
     }
 
-    .email-icon.active {
-        display: none;
+    &.active {
+      display: block;
     }
+  }
 
-    &:hover .email-icon.default {
-        display: none;
+  a {
+    margin-left: 60px;
+
+    &:hover,
+    &:active {
+      color: rgb(137, 187, 217);
     }
-
-    &:hover .email-icon.hover {
-        display: block;
-    }
-
-    &:active .email-icon.hover {
-        display: none;
-    }
-
-    &:active .email-icon.active {
-        display: block;
-    }
-
-    a {
-        margin-left: 60px;
-
-        &:hover,
-        &:active {
-            color: rgb(137, 187, 217);
-        }
-    }
+  }
 }
 
 .phone-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  height: 40px;
+
+  .phone-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
     height: 40px;
+    transition: opacity 0.2s;
+    display: none;
 
-    .phone-icon {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        transition: opacity 0.2s;
-        display: none;
+    &.default {
+      display: block;
     }
 
-    .phone-icon.default {
+    &.hover {
+      display: none;
+    }
+  }
+
+  &:hover .phone-icon {
+    &.default {
+      display: none;
+    }
+
+    &.hover {
+      display: block;
+    }
+  }
+
+  a {
+    margin-left: 60px;
+
+    &:hover {
+      color: rgb(137, 187, 217);
+    }
+  }
+}
+
+// ===========================
+// RESPONSIVE DESIGN
+// ===========================
+
+@media screen and (max-width: 1340px) {
+  .contact-me {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .back-button {
+    display: none;
+  }
+
+  .back-button-mobile-container {
+    display: flex;
+  }
+
+  .contact-text-container {
+    flex-direction: column-reverse;
+    padding: 0;
+    width: 100%;
+  }
+
+  .text-box,
+  .info-box {
+    width: 100%;
+  }
+
+  .info-box {
+    flex-direction: column-reverse;
+    font-size: 18px;
+  }
+
+  .email-box {
+    &:hover .email-icon {
+      &.default {
         display: block;
-    }
+      }
 
-    .phone-icon.hover {
+      &.hover {
         display: none;
+      }
     }
 
-    &:hover .phone-icon.default {
-        display: none;
-    }
-
-    &:hover .phone-icon.hover {
+    &:active .email-icon {
+      &.hover {
         display: block;
+      }
+
+      &.active {
+        display: none;
+      }
     }
 
     a {
-        margin-left: 60px;
+      word-break: break-all;
 
-        &:hover {
-            color: rgb(137, 187, 217);
-        }
+      &:hover,
+      &:active {
+        color: white;
+      }
     }
+  }
+
+  .phone-box {
+    &:hover .phone-icon {
+      &.default {
+        display: block;
+      }
+
+      &.hover {
+        display: none;
+      }
+    }
+
+    a {
+      word-break: break-all;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }

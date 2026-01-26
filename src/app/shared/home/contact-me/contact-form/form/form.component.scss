@@ -1,180 +1,226 @@
+// ===========================
+// FORM MAIN CONTAINER
+// ===========================
+
 .contact-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-top: 50px;
-
-    @media screen and (max-width: 1340px) {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-
-    @media screen and (max-width: 1040px) {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
-a {
-    color: rgb(137, 186, 217);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 50px;
 }
 
 .form-container {
-    width: 100%;
-
-    @media screen and (max-width: 1040px) {
-        .input-label {
-            display: none;
-        }
-    }
+  width: 100%;
 }
 
-.row {
-    display: flex;
-    gap: 50px;
-    margin-bottom: 25px;
+// ===========================
+// FORM LAYOUT
+// ===========================
 
-    @media screen and (max-width: 1040px) {
-        flex-direction: column;
-    }
+.row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 25px;
 }
 
 .field {
-    flex: 1;
+  flex: 1;
 }
 
+// ===========================
+// FORM ELEMENTS
+// ===========================
+
 label {
-    display: block;
-    font-size: 14px;
-    margin-left: 25px;
-    margin-bottom: 8px;
-    color: rgb(137, 186, 217);
+  display: block;
+  font-size: 14px;
+  margin-left: 25px;
+  margin-bottom: 8px;
+  color: rgb(137, 186, 217);
 }
 
 input[type="text"],
 input[type="email"] {
-    width: 100%;
-    background: transparent;
-    border: 1.5px solid rgb(137, 187, 217);
-    border-radius: 50px;
-    color: #ffffff;
-    font-size: 14px;
-    outline: none;
-    height: 50px;
-    padding: 8px 30px;
+  width: 100%;
+  background: transparent;
+  border: 1.5px solid rgb(137, 187, 217);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  height: 50px;
+  padding: 8px 30px;
 }
 
 textarea {
-    width: 100%;
-    background: transparent;
-    border: 1.5px solid rgb(137, 187, 217);
-    border-radius: 30px;
-    color: #ffffff;
-    font-size: 14px;
-    outline: none;
-    padding: 30px;
-    height: 160px;
-    resize: none;
+  width: 100%;
+  background: transparent;
+  border: 1.5px solid rgb(137, 187, 217);
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  padding: 30px;
+  height: 160px;
+  resize: none;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: rgba(137, 187, 217, 0.6);
+  color: rgba(137, 187, 217, 0.6);
 }
 
-.bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+// ===========================
+// FORM BOTTOM SECTION
+// ===========================
 
-    @media screen and (max-width: 1040px) {
-        position: relative;
-        height: 100px;
-        align-items: flex-start;
-    }
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .checkbox {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-.checkbox p {
+  p {
     margin: 0;
-}
+  }
 
-.checkbox img {
+  img {
     width: 32px;
     height: 32px;
     display: block;
+  }
+
+  &.error {
+    cursor: not-allowed;
+  }
 }
 
-.checkbox.error {
-    cursor: not-allowed;
-}
+// ===========================
+// SUBMIT BUTTON
+// ===========================
 
 button {
-    background-color: transparent;
-    color: rgb(144, 145, 145);
-    border: 1.5px solid rgb(144, 145, 145);
-    width: 100px;
-    height: 50px;
-    border-radius: 50px;
-    cursor: not-allowed;
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  background-color: transparent;
+  color: rgb(144, 145, 145);
+  border: 1.5px solid rgb(144, 145, 145);
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: not-allowed;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 
-    @media screen and (max-width: 1040px) {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-}
-
-button:disabled {
+  &:disabled {
     cursor: not-allowed;
     pointer-events: none;
-}
+  }
 
-button:not(:disabled) {
+  &:not(:disabled) {
     color: rgb(137, 186, 217);
     border: 1.5px solid rgb(137, 186, 217);
     cursor: pointer;
+
+    &:hover {
+      background-color: rgba(137, 186, 217, 0.5);
+    }
+  }
 }
 
-button:not(:disabled):hover {
-    background-color: rgba(137, 186, 217, 0.5);
-}
+// ===========================
+// POPUP MODAL
+// ===========================
 
 .popup-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .popup {
-    background: #0b1d2a;
-    border: 1.5px solid rgb(137, 186, 217);
-    padding: 30px 40px;
-    border-radius: 20px;
-    text-align: center;
-    color: white;
-}
+  background: #0b1d2a;
+  border: 1.5px solid rgb(137, 186, 217);
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
 
-.popup p {
+  p {
     margin-bottom: 20px;
     font-size: 16px;
-}
+  }
 
-.popup button {
+  button {
     width: auto;
     padding: 10px 25px;
+  }
+}
+
+// ===========================
+// LINKS
+// ===========================
+
+a {
+  color: rgb(137, 186, 217);
+}
+
+// ===========================
+// RESPONSIVE DESIGN
+// ===========================
+
+@media screen and (max-width: 1340px) {
+  .contact-form {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .contact-form {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form-container {
+    .input-label {
+      display: none;
+    }
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .bottom {
+    position: relative;
+    height: 100px;
+    align-items: flex-start;
+  }
+
+  .checkbox {
+    cursor: default;
+  }
+
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .bottom {
+    height: 150px;
+  }
 }

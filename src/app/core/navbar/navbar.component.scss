@@ -1,69 +1,94 @@
+// ===========================
+// NAVIGATION MAIN CONTAINER
+// ===========================
+
 nav {
-    background-color: rgb(137, 187, 217);
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    font-weight: 500;
-    font-size: 26px;
-
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 100;
-
-    @media screen and (max-width: 1240px) {
-        display: none;
-    }
+  background-color: rgb(137, 187, 217);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-weight: 500;
+  font-size: 26px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 100;
 }
 
-a {
-    color: rgb(37, 45, 51);
-}
+// ===========================
+// NAVIGATION LOGO
+// ===========================
 
 .nav-logo {
-    height: 70px;
-    display: flex;
-    justify-content: center;
+  height: 70px;
+  display: flex;
+  justify-content: center;
 }
+
+// ===========================
+// NAVIGATION LINKS
+// ===========================
 
 .nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
 
-    a {
-        &:hover {
-            color: white;
-            cursor: pointer;
-        }
+  a {
+    &:hover {
+      color: white;
+      cursor: pointer;
     }
+  }
 }
 
+// ===========================
+// LANGUAGE SELECTOR
+// ===========================
+
 .nav-language {
-    gap: 14px;
-    display: flex;
-    font-size: 18px;
+  gap: 14px;
+  display: flex;
+  font-size: 18px;
 }
 
 .language-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
 
-    img {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-    }
+  img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
 }
 
 .language-aktiv {
-    color: white !important;
+  color: white !important;
+}
+
+// ===========================
+// LINKS
+// ===========================
+
+a {
+  color: rgb(37, 45, 51);
+}
+
+// ===========================
+// RESPONSIVE DESIGN
+// ===========================
+
+@media screen and (max-width: 1240px) {
+  nav {
+    display: none;
+  }
 }

@@ -1,141 +1,161 @@
+// ===========================
+// FOOTER MAIN CONTAINER
+// ===========================
+
 footer {
-    background-color: rgb(137, 187, 217);
-    height: 200px;
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media screen and (max-width: 1340px) {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    @media screen and (max-width: 1240px) {
-        flex-direction: column-reverse;
-        height: auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        gap: 20px;
-    }
-
-    @media screen and (max-width: 450px) {
-        gap: 10px;
-    }
+  background-color: rgb(137, 187, 217);
+  height: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-a {
-    color: rgb(37, 45, 51);
-}
+// ===========================
+// FOOTER LOGO
+// ===========================
 
 .footer-logo {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-
-    @media screen and (max-width: 1240px) {
-        left: auto;
-        position: inherit;
-
-        img {
-            height: 80px;
-            display: flex !important;
-        }
-    }
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
 }
 
-.sozial-media-button {
-    display: flex;
-    gap: 15px;
-    position: absolute;
-    padding-bottom: 30px;
-    right: 100px;
+// ===========================
+// SOCIAL MEDIA BUTTONS
+// ===========================
 
-    @media screen and (max-width: 1240px) {
-        display: none;
-    }
+.sozial-media-button {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  padding-bottom: 30px;
+  right: 100px;
 }
 
 .email-box,
 .github-box,
 .linkedin-box {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
 
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+
+    &:first-child {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &:last-child {
+      opacity: 0;
+      z-index: 2;
+    }
+  }
+
+  &:hover {
+    img {
+      &:first-child {
+        opacity: 0;
+      }
+
+      &:last-child {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// ===========================
+// LINKS
+// ===========================
+
+a {
+  color: rgb(37, 45, 51);
+}
+
+// ===========================
+// RESPONSIVE DESIGN
+// ===========================
+
+@media screen and (max-width: 1340px) {
+  footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  footer {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    left: auto;
+    position: inherit;
 
     img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        transition: opacity 0.3s ease;
-
-        &:first-child {
-            opacity: 1;
-            z-index: 1;
-        }
-
-        &:last-child {
-            opacity: 0;
-            z-index: 2;
-        }
+      height: 80px;
+      display: flex !important;
     }
+  }
 
+  .sozial-media-button {
+    display: none;
+  }
 
-    &:hover {
-        img {
-            &:first-child {
-                opacity: 0;
-            }
+  .footer-infos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
 
-            &:last-child {
-                opacity: 1;
-            }
-        }
+    p {
+      color: rgb(37, 45, 51);
     }
+  }
+
+  .sozial-media-mobile {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    img {
+      height: 50px;
+      display: flex !important;
+    }
+  }
 }
 
-.footer-infos {
-    @media screen and (max-width: 1240px) {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        width: 100%;
-        align-items: center;
+@media screen and (max-width: 450px) {
+  footer {
+    gap: 10px;
+  }
 
-        p {
-            color: rgb(37, 45, 51);
-        }
-    }
+  .footer-infos {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 20px;
+  }
 
-    @media screen and (max-width: 450px) {
-        flex-direction: column;
-        gap: 0;
-        padding-top: 20px;
-    }
-}
-
-.sozial-media-mobile {
-    @media screen and (max-width: 1240px) {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-
-        img {
-            height: 50px;
-            display: flex !important;
-        }
-    }
-
-    @media screen and (max-width: 450px) {
-        gap: 20px;
-    }
+  .sozial-media-mobile {
+    gap: 20px;
+  }
 }

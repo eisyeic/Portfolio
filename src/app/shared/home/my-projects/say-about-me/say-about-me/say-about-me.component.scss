@@ -1,161 +1,161 @@
+// ===========================
+// SAY ABOUT ME MAIN CONTAINER
+// ===========================
+
 .say-about-me {
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  flex-direction: column;
+  align-items: center;
 
-    h4 {
-        color: rgb(137, 186, 217);
-        font-size: 32px;
-    }
-
-    @media screen and (max-width: 1340px) {
-        padding-left: 50px;
-        padding-right: 50px;
-
-        .h4-desktop {
-            display: none;
-        }
-
-        .h4-mobile {
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-
-            h4 {
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    @media screen and (max-width: 1040px) {
-        padding-left: 0;
-        padding-right: 0;
-    }
+  h4 {
+    color: rgb(137, 186, 217);
+    font-size: 32px;
+  }
 }
+
+// ===========================
+// BUBBLE CONTAINER
+// ===========================
 
 .bubble-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
 }
-
-/* Scroll erst UNTER 1040px */
-@media (max-width: 1040px) {
-    .bubble-container {
-        overflow-x: auto;
-        overflow-y: hidden;
-        scrollbar-width: none;
-        cursor: grab;
-
-        /* verhindert Body-Scroll */
-        width: 100%;
-        box-sizing: border-box;
-
-        /* Abstand links & rechts OHNE Overflow */
-        padding: 0 50px;
-        scroll-padding-left: 20px;
-        scroll-padding-right: 20px;
-
-        justify-content: flex-start;
-
-        /* nice UX */
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: x mandatory;
-
-        .bubble-container::-webkit-scrollbar {
-            display: none;
-        }
-
-        .bubble-container {
-            scrollbar-width: none;
-            scroll-snap-align: start;
-        }
-    }
-}
-
 
 .bubble-box {
-    background-image: url(/assets/img/say-about-me/bubble-default.svg);
-    width: 100%;
-    object-fit: contain;
-    background-size: contain;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
+  background-image: url(/assets/img/say-about-me/bubble-default.svg);
+  width: 100%;
+  object-fit: contain;
+  background-size: contain;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
 
+  h5 {
+    font-size: 26px;
+    margin: 0;
+    font-weight: 600;
+  }
 
+  h6 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-    h5 {
-        font-size: 26px;
-        margin: 0;
-        font-weight: 600;
-    }
+  a {
+    font-size: 18px;
+    color: rgb(137, 186, 217);
+  }
 
-    h6 {
-        font-size: 18px;
-        margin: 0;
-        font-weight: 400;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  p {
+    width: 290px;
+  }
 
-    a {
-        font-size: 18px;
-        color: rgb(137, 186, 217);
-    }
-
-    p {
-        width: 290px;
-    }
-
-    &:hover {
-        background-image: url(/assets/img/say-about-me/bubble-hover.svg);
-    }
-
-    @media (max-width: 1240px) {
-        width: 300px;
-
-        h5 {
-            font-size: 24px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-    }
-
-    @media screen and (max-width: 1040px) {
-        .bubble-box {
-            flex: 0 0 auto; 
-            width: 300px;
-        }
-        &:hover {
-            background-image: url(/assets/img/say-about-me/bubble-default.svg);
-        }
-
-    }
+  &:hover {
+    background-image: url(/assets/img/say-about-me/bubble-hover.svg);
+  }
 }
 
 .linkedin {
-    font-size: 16px;
-    text-decoration: underline;
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+  font-size: 16px;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+// ===========================
+// RESPONSIVE DESIGN
+// ===========================
+
+@media screen and (max-width: 1340px) {
+  .say-about-me {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .h4-desktop {
+      display: none;
+    }
+
+    .h4-mobile {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .bubble-box {
+    width: 300px;
+
+    h5 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .say-about-me {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .bubble-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    cursor: grab;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+    scroll-padding-left: 20px;
+    scroll-padding-right: 20px;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .bubble-box {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+
+    &:hover {
+      background-image: url(/assets/img/say-about-me/bubble-default.svg);
+    }
+  }
 }

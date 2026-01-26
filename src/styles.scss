@@ -1,4 +1,7 @@
-// Lokale Font Definition
+// ===========================
+// FONT DEFINITIONS
+// ===========================
+
 @font-face {
   font-family: 'Josefin Sans';
   src: url('/assets/font/Josefin_Sans/static/JosefinSans-Thin.ttf') format('truetype');
@@ -48,17 +51,9 @@
   font-style: normal;
 }
 
-// Globale Style
-body {
-  height: 100vh;
-  width: 100%;
-  max-width: 100vw;
-  margin: 0;
-  background-color: rgb(37, 45, 51);
-  font-family: "Josefin Sans", sans-serif;
-  color: white;
-  box-sizing: border-box;
-}
+// ===========================
+// GLOBAL STYLES
+// ===========================
 
 * {
   scroll-behavior: smooth;
@@ -70,14 +65,20 @@ body {
   box-sizing: border-box;
 }
 
-
-.d-none {
-  display: none;
+body {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  background-color: rgb(37, 45, 51);
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
+// ===========================
+// TYPOGRAPHY
+// ===========================
 
 h1 {
   font-size: 88px;
@@ -97,25 +98,19 @@ h4 {
   font-size: 30px;
 }
 
-@media screen and (max-width: 1040px) {
-  h1 {
-    font-size: 48px;
-  }
-  h2 {
-    font-size: 32px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 18px;
-  }
-  p {
-    font-size: 16px;
-  }
+a {
+  text-decoration: none;
 }
 
-// Font Class
+// ===========================
+// UTILITY CLASSES
+// ===========================
+
+.d-none {
+  display: none;
+}
+
+// Font weight classes
 .josefin-sans-thin {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
@@ -158,10 +153,12 @@ h4 {
   font-style: normal;
 }
 
-// Media Query
-// ... existing code ...
-@media (max-width: 1240px) {
+// ===========================
+// RESPONSIVE DESIGN
+// ===========================
 
+@media screen and (max-width: 1240px) {
+  // Disable hover effects on mobile devices
   a,
   .sozial-media-button,
   .email-box,
@@ -173,4 +170,35 @@ h4 {
   }
 }
 
-// ... existing code ...
+@media screen and (max-width: 1040px) {
+  h1 {
+    font-size: 48px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+}

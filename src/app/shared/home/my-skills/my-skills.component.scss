@@ -1,140 +1,184 @@
+// ===========================
+// MY SKILLS MAIN CONTAINER
+// ===========================
+
 .my-skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-    padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  padding-bottom: 0;
 
-    h2 {
-        margin-top: 0;
-        color: rgb(137, 187, 217);
-    }
-
-    @media screen and (max-width: 1340px) {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  h2 {
+    margin-top: 0;
+    color: rgb(137, 187, 217);
+  }
 }
 
-.my-skills-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+// ===========================
+// SKILLS LAYOUT
+// ===========================
 
-    @media screen and (max-width: 1040px) {
-        flex-direction: column;
-    }
+.my-skills-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
 }
 
 .my-skills-item {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
+// ===========================
+// SKILLS TEXT SECTIONS
+// ===========================
+
 .my-skills-text-box {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  background-image: url('/assets/img/my-skills/ellipse-default.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-out;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:hover {
+    background-image: url('/assets/img/my-skills/ellipse-hover.svg');
     width: 380px;
     height: 380px;
-    background-image: url('/assets/img/my-skills/ellipse-default.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease-out;
+  }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    &:hover {
-        background-image: url('/assets/img/my-skills/ellipse-hover.svg');
-        width: 380px;
-        height: 380px;
-    }
-
-    p {
-        width: 300px;
-    }
-
-    @media screen and (max-width: 1040px) {
-        display: none;
-    }
+  p {
+    width: 300px;
+  }
 }
 
 .my-skills-text-box-mobile {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    @media screen and (max-width: 1040px) {
-        display: flex;
-    }
-
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .my-skills-text-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
-
-    @media screen and (max-width: 650px) {
-        width: calc(100vw - 100px);
-        gap: 20px;
-    }
-
-    @media screen and (max-width: 550px) {
-        flex-direction: column;
-    }
-}
-
-.blue {
-    color: rgb(137, 187, 217);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
 }
 
 .my-skills-text-mobile-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/assets/img/my-skills/ellipse-default.svg');
-    background-size: contain;
-    width: 400px;
-    height: 130px;
-    background-position: center;
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/img/my-skills/ellipse-default.svg');
+  background-size: contain;
+  width: 400px;
+  height: 130px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.button-box {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    display: none;
+// ===========================
+// UTILITY CLASSES
+// ===========================
 
-    @media screen and (max-width: 1040px) {
-        display: flex;
-    }
+.blue {
+  color: rgb(137, 187, 217);
+}
+
+// ===========================
+// BUTTON SECTION
+// ===========================
+
+.button-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  display: none;
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  color: rgb(37, 45, 51);
+  background-image: url('/assets/img/why-me/lets-talk-default.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: center;
+  background-color: rgb(137, 187, 217);
+  border-radius: 30px;
+}
+
+// ===========================
+// RESPONSIVE DESIGN
+// ===========================
+
+@media screen and (max-width: 1340px) {
+  .my-skills {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .my-skills-box {
+    flex-direction: column;
+  }
+
+  .my-skills-text-box {
+    display: none;
+  }
+
+  .my-skills-text-box-mobile {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 150px;
-    font-size: 18px;
-    color: rgb(37, 45, 51);
-    background-image: url('/assets/img/why-me/lets-talk-default.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-position: center;
-    background-color: rgb(137, 187, 217);
-    border-radius: 30px;
+  }
+
+  .button-box {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .my-skills-text-mobile {
+    width: calc(100vw - 100px);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .my-skills-text-mobile {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .my-skills {
+    text-align: center;
+  }
+
+  .my-skills-item {
+    grid-template-columns: repeat(2, 1fr);
+    
+    img {
+      width: 100% !important;
+      height: 100px;
+    }
+  }
 }
