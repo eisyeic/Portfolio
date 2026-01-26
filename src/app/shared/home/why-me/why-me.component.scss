@@ -15,7 +15,7 @@
         padding-left: 50px;
         padding-right: 50px;
 
-        h2{
+        h2 {
             margin-bottom: 50px;
         }
     }
@@ -45,6 +45,10 @@
     h4 {
         margin: 0;
     }
+
+    @media screen and (max-width: 550px) {
+        width: calc(100vw - 100px);
+    }
 }
 
 .why-me-text {
@@ -55,7 +59,7 @@
     width: 500px;
     gap: 20px;
 
-    p{
+    p {
         margin: 0;
     }
 
@@ -63,6 +67,10 @@
         p {
             text-align: center;
         }
+    }
+
+    @media screen and (max-width: 550px) {
+        width: calc(100vw - 100px);
     }
 }
 
@@ -73,29 +81,28 @@
 }
 
 .why-me-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px; 
-  width: 150px; 
-  font-size: 18px;
-  color:rgb(137, 187, 217);
-  background-image: url('/assets/img/why-me/lets-talk-default.svg'); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    color: rgb(137, 187, 217);
+    background-image: url('/assets/img/why-me/lets-talk-default.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center;
 
-  &:hover {
-    background-image: url('/assets/img/why-me/lets-talk-hover.svg'); 
-  }
+    &:hover {
+        background-image: url('/assets/img/why-me/lets-talk-hover.svg');
+    }
 
-  &:active {
-    background-image: url('/assets/img/why-me/lets-talk-click.svg'); 
-  }
+    &:active {
+        background-image: url('/assets/img/why-me/lets-talk-click.svg');
+    }
 
     @media screen and (max-width: 1240px) {
         display: none;
     }
 }
-

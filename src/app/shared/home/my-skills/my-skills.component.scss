@@ -56,7 +56,7 @@
         height: 380px;
     }
 
-    p{
+    p {
         width: 300px;
     }
 
@@ -75,6 +75,7 @@
     @media screen and (max-width: 1040px) {
         display: flex;
     }
+
 }
 
 .my-skills-text-mobile {
@@ -83,6 +84,15 @@
     align-items: center;
     text-align: center;
     gap: 50px;
+
+    @media screen and (max-width: 650px) {
+        width: calc(100vw - 100px);
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+    }
 }
 
 .blue {
@@ -113,18 +123,18 @@
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px; 
-  width: 150px; 
-  font-size: 18px;
-  color:rgb(37, 45, 51);
-  background-image: url('/assets/img/why-me/lets-talk-default.svg'); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  background-position: center;
-  background-color: rgb(137, 187, 217);
-  border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    color: rgb(37, 45, 51);
+    background-image: url('/assets/img/why-me/lets-talk-default.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center;
+    background-color: rgb(137, 187, 217);
+    border-radius: 30px;
 }
