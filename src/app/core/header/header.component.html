@@ -1,35 +1,6 @@
 <header>
 
-  <div class="navbar-mobile">
-    <img class="logo-navbar-mobile" (click)="onLogoClick()" src="/assets/img/header/logo-default.svg"
-      alt="Logo Default">
-    <div class="menu-icon" (click)="onMenuIconClick()">
-      <img src="/assets/img/header/burger-default.svg" alt="Burger Icon Default"
-        [ngClass]="{'visible': !menuOpen, 'hidden': menuOpen}">
-      <img src="/assets/img/header/burger-close-default.svg" alt="Burger Icon Close Default"
-        [ngClass]="{'visible': menuOpen, 'hidden': !menuOpen}">
-    </div>
-  </div>
-    <div navbar-container *ngIf="menuOpen">
-      <div class="navbar-overlay" (click)="closeMenu()"></div>
-      <div class="navbar-menu" *ngIf="menuOpen">
-        <a (click)="scrollToSection('why-me')">{{ 'NAV_WHY_ME' | translate }}</a>
-        <a (click)="scrollToSection('my-skills')">{{ 'NAV_SKILLS' | translate }}</a>
-        <a (click)="scrollToSection('my-projects')">{{ 'NAV_PROJECTS' | translate }}</a>
-        <a (click)="scrollToSection('contact-me')">{{ 'NAV_CONTACT' | translate }}</a>
-        <div class="language-mobile">
-          <div class="language-box">
-            <a (click)="switchLanguage('de')" [class.language-aktiv]="currentLang === 'de'">DE</a>
-            <img [class.d-none]="currentLang !== 'de'" src="/assets/img/navbar/ellipse-small.svg" alt="ellipse-small">
-          </div>
-
-          <div class="language-box">
-            <a (click)="switchLanguage('en')" [class.language-aktiv]="currentLang === 'en'">EN</a>
-            <img [class.d-none]="currentLang !== 'en'" src="/assets/img/navbar/ellipse-small.svg" alt="ellipse-small">
-          </div>
-        </div>
-      </div>
-    </div>
+  <app-navbar-mobile class="navbar-mobile"></app-navbar-mobile>
  
 
   <div class="pass-img-container">

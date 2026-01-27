@@ -19,3 +19,51 @@ a {
     border-radius: 20px;
   }
 }
+
+// ===========================
+// RESPONSIVE DESIGN
+// ===========================
+
+@media screen and (max-width: 1240px) {
+  .navbar-mobile {
+    padding: 50px 50px 0;
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .privacy-policy-container {
+    padding: 50px;
+  }
+
+h2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
+    a {
+    &:hover {
+      color: rgb(137, 187, 217);
+      background-color: transparent;
+      border-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .privacy-policy-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-mobile {
+    padding: 50px 20px 0;
+  }
+}

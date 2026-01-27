@@ -1,7 +1,8 @@
 <app-navbar></app-navbar>
+<app-navbar-mobile class="navbar-mobile"></app-navbar-mobile>
 
 <div class="privacy-policy-container">
-  <h2>{{ 'PRIVACY_TITLE' | translate }}</h2>
+  <h2 [innerHTML]="'PRIVACY_TITLE' | translate"></h2>
 
   <h3>{{ 'PRIVACY_SECTION1_TITLE' | translate }}</h3>
 
