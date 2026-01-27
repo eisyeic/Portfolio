@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet, Router } from '@angular/router';
-import { FooterComponent } from "./core/footer/footer.component";
+import { Router, RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { HomeComponent } from './shared/home/home.component';
-import { HeaderComponent } from "./core/header/header.component"; 
 
 @Component({
   selector: 'app-root',
@@ -19,9 +16,10 @@ export class AppComponent implements OnInit {
   constructor(
     private router: Router,
     private translate: TranslateService
-  ) { }
+  ) {}
 
-  ngOnInit() {
+  /** Initializes application with default language settings */
+  ngOnInit(): void {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
   }

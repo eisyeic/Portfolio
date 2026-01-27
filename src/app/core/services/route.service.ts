@@ -16,6 +16,10 @@ export class RouteService {
     );
   }
 
+  /** 
+   * Checks if header should be hidden for current URL
+   * @param url - Current route URL
+   */
   shouldHideHeader(url: string): boolean {
     return url.includes('/legal-notice');
   }

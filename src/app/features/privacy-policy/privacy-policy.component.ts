@@ -4,8 +4,6 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NavbarComponent } from "../../core/navbar/navbar.component";
 import { FooterComponent } from "../../core/footer/footer.component";
 
-
-
 @Component({
   selector: 'app-privacy-policy',
   standalone: true,
@@ -14,5 +12,4 @@ import { FooterComponent } from "../../core/footer/footer.component";
   styleUrl: './privacy-policy.component.scss'
 })
 export class PrivacyPolicyComponent {
-
 }

@@ -10,5 +10,4 @@ import { TranslateModule } from "@ngx-translate/core";
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
-
 }

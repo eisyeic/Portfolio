@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormComponent } from "./contact-form/form/form.component";
 import { TranslateModule } from "@ngx-translate/core";
+import { FormComponent } from "./contact-form/form/form.component";
 
 @Component({
   selector: 'app-contact-me',
@@ -11,7 +11,8 @@ import { TranslateModule } from "@ngx-translate/core";
 })
 export class ContactMeComponent {
 
-  scrollToTop() {
+  /** Scrolls to top of page with smooth animation */
+  scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
