@@ -186,6 +186,14 @@ a {
   }
 }
 
+@media screen and (min-width: 1040px) {
+
+  input::placeholder,
+  textarea::placeholder {
+    color: transparent;
+  }
+}
+
 @media screen and (max-width: 1040px) {
   .contact-form {
     padding-left: 50px;
@@ -194,7 +202,7 @@ a {
 
   .form-container {
     .input-label {
-      display: none;
+      display: none !important;
     }
   }
 

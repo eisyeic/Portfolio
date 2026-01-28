@@ -15,7 +15,7 @@
     "LEGAL_EXPLORING_BOARD": "Überblick",
     "LEGAL_EMAIL": "davideisenbarth@gmail.com",
     "LEGAL_ACCEPTANCE_TITLE": "Akzeptanz der Bedingungen",
-    "LEGAL_ACCEPTANCE_TEXT": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Allgemeinen Geschäftsbedingungen sowie alle Richtlinien, Leitlinien oder Änderungen an, die Ihnen von Zeit zu Zeit präsentiert werden. Wir, die aufgeführten Studenten, können die Bedingungen von Zeit zu Zeit ohne Vorankündigung aktualisieren oder ändern.",
+    "LEGAL_ACCEPTANCE_TEXT": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Allgemeinen Geschäftsbedingungen sowie alle Richtlinien, Leitlinien oder Änderungen an, die Ihnen von Zeit zu Zeit präsentiert werden. Ich kann die Bedingungen von Zeit zu Zeit ohne Vorankündigung aktualisieren oder ändern.",
     "LEGAL_SCOPE_TITLE": "Geltungsbereich und Eigentum des Produkts",
     "LEGAL_SCOPE_TEXT": "Portfolio wurde im Rahmen eines Studentenprojekts in einem Web-Development-Bootcamp bei der Developer Akademie GmbH entwickelt. Es dient Bildungszwecken und ist nicht für umfassende private oder geschäftliche Nutzung vorgesehen. Daher können wir keine konsistente Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsaspekte des Produkts garantieren. Das Design von Portfolio gehört der Developer Akademie GmbH. Unbefugte Nutzung, Reproduktion, Modifikation, Verbreitung oder Nachbildung des Designs ist strengstens untersagt.",
     "LEGAL_PROPRIETARY_TITLE": "Eigentumsrechte",
@@ -104,7 +104,7 @@
         "ABOUT": {
             "TITLE": "Über das Projekt",
             "DURATION": "Dauer: 1 Woche",
-            "CONTENT": "Diese App ist ein selbstgebautes Pokédex-App. Sie bietet einen umfassenden Überblick über Pokémon mit detaillierten Informationen, intuitiver Navigation und sauberem Interface, alles eigenständig entwickelt, um starke Problemlösungsfähigkeiten, strukturiertes Arbeiten und Liebe zum Detail zu demonstrieren.",
+            "CONTENT": "Diese App ist eine selbstgebaute Pokédex-App. Sie bietet einen umfassenden Überblick über Pokémon mit detaillierten Informationen, intuitiver Navigation und sauberem Interface, alles eigenständig entwickelt.",
             "MOBILE": "Technologien: HTML, CSS, JavaScript",
             "MOBILE_DURATION": "Dauer: 1 Woche"
         },
@@ -127,7 +127,7 @@
         },
         "WORK": {
             "TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
-            "CONTENT": "Die Anwendung ist objektorientiert und in klare Klassen wie Spieler, Gegner, Items und Spielwelt unterteilt. Beschreibende Namen für Dateien, Variablen und Methoden machen den Code leicht verständlich. Wichtige Funktionen sind kurz dokumentiert, und die klare Struktur erlaubt einfache Erweiterungen oder Anpassungen von Spielmechaniken."
+            "CONTENT": "Die Anwendung ist objektorientiert und in klare Klassen wie Spieler, Gegner, Items und Spielwelt unterteilt. Ausdruckstarke Namen für Dateien, Variablen und Methoden machen den Code leicht verständlich. Wichtige Funktionen sind kurz dokumentiert, und die klare Struktur erlaubt einfache Erweiterungen oder Anpassungen von Spielmechaniken."
         },
         "LEARNED": {
             "TITLE": "Was ich gelernt habe",
@@ -138,13 +138,13 @@
         "ABOUT": {
             "TITLE": "Über das Projekt",
             "DURATION": "Dauer: 5 Wochen",
-            "CONTENT": "Task Manager inspiriert vom Kanban-System. Aufgaben erstellen und organisieren mit Drag-and-Drop, Benutzer und Kategorien zuweisen.",
+            "CONTENT": "Diese App ist eine selbstgebaute Task-Manager-App inspiriert vom Kanban-System. Aufgaben erstellen und organisieren mit Drag-and-Drop, Benutzer und Kategorien zuweisen.",
             "MOBILE": "Technologien: HTML, CSS, JavaScript",
             "MOBILE_DURATION": "Dauer: 5 Wochen"
         },
         "WORK": {
             "TITLE": "Wie ich meinen Arbeitsprozess organisiert habe",
-            "CONTENT": "In unserem Gruppenprojekt mit HTML, CSS und Java strukturierten wir den Code übersichtlich und wartbar. Die Anwendung ist in klar getrennte Bereiche aufgeteilt (Struktur, Design, Logik). Wir verwenden sprechende Namen für Dateien, Variablen und Klassen und dokumentieren wichtige Stellen kurz im Code. Durch einfache Tests und gegenseitige Code-Reviews stellen wir die Qualität und Verständlichkeit sicher."
+            "CONTENT": "In unserem Gruppenprojekt mit HTML, CSS und Java strukturierten wir den Code übersichtlich und wartbar. Die Anwendung ist in klar getrennte Bereiche aufgeteilt (Struktur, Design, Logik). Wir verwenden ausdrucksstarke Namen für Dateien, Variablen und Klassen und dokumentieren wichtige Stellen kurz im Code. Durch einfache Tests und gegenseitige Code-Reviews stellen wir die Qualität und Verständlichkeit sicher."
         },
         "LEARNED": {
             "TITLE": "Was ich gelernt habe",

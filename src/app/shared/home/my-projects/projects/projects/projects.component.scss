@@ -272,6 +272,12 @@
   }
 }
 
+@media screen and (min-width: 1040px) {
+  .button-box-mobile {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1040px) {
   .nav {
     display: none;
@@ -357,6 +363,7 @@
 }
 
 @media screen and (max-width: 550px) {
+
   .screen,
   .screen-cover,
   .white-screen {
