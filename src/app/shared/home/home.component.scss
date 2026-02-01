@@ -2,6 +2,36 @@
 // MAIN CONTAINER
 // ===========================
 
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
 main {
   padding-bottom: 100px;
+}
+
+app-navbar {
+  background-color: rgb(137, 187, 217);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+app-contact-me {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+app-footer {
+  background-color: rgb(137, 187, 217);
+  display: flex;
+  justify-content: center;
+  
 }

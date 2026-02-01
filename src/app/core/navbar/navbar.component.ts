@@ -58,11 +58,19 @@ export class NavbarComponent {
   }
 
   /** 
-   * Scrolls to element by ID
+   * Scrolls to element by ID with offset
    * @param sectionId - Element ID to scroll to
    */
   private scrollToElement(sectionId: string): void {
     const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (element) {
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - 50;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   }
 }
