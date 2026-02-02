@@ -77,6 +77,9 @@
     "FORM_PRIVACY_LINK": "Datenschutzerklärung",
     "FORM_PRIVACY_TEXT_AFTER": "gelesen und stimme der Verarbeitung meiner Daten zu.",
     "FORM_SEND_BUTTON": "Senden",
+    "FORM_NAME_ERROR": "Bitte geben Sie Ihren Namen ein.",
+    "FORM_EMAIL_ERROR": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "FORM_MESSAGE_ERROR": "Bitte geben Sie eine Nachricht ein.",
     "FORM_POPUP_SUCCESS": "Die Nachricht wurde erfolgreich übermittelt.",
     "FORM_POPUP_OK": "OK",
     "TESTIMONIALS_TITLE": "Du suchst einen Teamplayer? Das sagen meine Kollegen über mich",
@@ -93,7 +96,6 @@
             "POKEDEX": "1. Pokedex",
             "ELPOLLOLOCO": "2. El pollo loco",
             "JOIN": "3. Join",
-            "ONGOING": "4. Laufendes Projekt",
             "PROJECT": "Projekt"
         },
         "TECHNOLOGIES": "Technologien",
@@ -149,16 +151,6 @@
         "LEARNED": {
             "TITLE": "Was ich gelernt habe",
             "CONTENT": "Wir waren zu dritt im Team, und die Rollen waren gleichmäßig verteilt. Meine Hauptaufgaben lagen bei Task-Management, Pinnwand, Impressum und Datenschutzseiten. Es war eine tolle Zusammenarbeit und ein erfolgreiches Projekt."
-        }
-    },
-    "ONGOING": {
-        "ABOUT": {
-            "TITLE": "Über das Projekt",
-            "DURATION": "Dauer: 3 Wochen",
-            "CONTENT": "Diese App ist eine Slack Clone App. Sie revolutioniert die Teamkommunikation mit intuitiver Oberfläche, Echtzeit-Messaging und robuster Kanalorganisation. Zeigt den Wunsch, neue Technologien zu lernen und Fähigkeiten kontinuierlich zu verbessern.",
-            "MOBILE_P": "Laufendes Projekt",
-            "MOBILE": "Technologien: Angular, TypeScript, Firebase",
-            "MOBILE_DURATION": "Dauer: 3 Wochen"
         }
     }
 }

@@ -7,8 +7,6 @@
             translate }}</span>
         <span class="tab" [class.active]="activeTab === 3" (click)="setTab(3)">{{ 'PROJECTS.TABS.JOIN' | translate
             }}</span>
-        <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">{{ 'PROJECTS.TABS.ONGOING' | translate
-            }}</span>
     </div>
     <div class="nav-mobile">
         <span class="tab" [class.active]="activeTab === 1" (click)="setTab(1)">1.{{ 'PROJECTS.TABS.PROJECT' | translate
@@ -16,8 +14,6 @@
         <span class="tab" [class.active]="activeTab === 2" (click)="setTab(2)">2.{{ 'PROJECTS.TABS.PROJECT' | translate
             }}</span>
         <span class="tab" [class.active]="activeTab === 3" (click)="setTab(3)">3.{{ 'PROJECTS.TABS.PROJECT' | translate
-            }}</span>
-        <span class="tab" [class.active]="activeTab === 4" (click)="setTab(4)">4.{{ 'PROJECTS.TABS.PROJECT' | translate
             }}</span>
     </div>
     
@@ -192,38 +188,6 @@
                         <a href="/assets/projects/join/index.html" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate
                             }}</a>
                         <a class="transparenz-box" href="https://github.com/eisyeic/Join.git" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </ng-container>
-
-        <!-- Tab 4 -->
-        <ng-container *ngIf="activeTab === 4">
-            <div class="container-left">
-                <div class="text-area">
-                    <div class="text-title">
-                        <img src="/assets/img/project/ellipse.svg" alt="Ellipse">
-                        <h5>{{ 'ONGOING.ABOUT.TITLE' | translate }}</h5>
-                        <span>{{ 'ONGOING.ABOUT.DURATION' | translate }}</span>
-                    </div>
-                    <div>
-                        <p>{{ 'ONGOING.ABOUT.CONTENT' | translate }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-right">
-                <div class="picture-area">
-                    <h3>{{ 'ONGOING.ABOUT.MOBILE_P' | translate }}</h3>
-                    <span>{{ 'PROJECTS.TECHNOLOGIES' | translate }}</span>
-                    <p>{{ 'ONGOING.ABOUT.MOBILE' | translate }}</p>
-                    <p>{{ 'ONGOING.ABOUT.MOBILE_DURATION' | translate }}</p>
-                    <div class="technologies">
-                        <img src="/assets/img/project/angular-icon.svg" alt="Angular Icon">
-                        <img src="/assets/img/project/typescript-icon.svg" alt="Typescript Icon">
-                        <img src="/assets/img/project/firebase-icon.svg" alt="Firebase Icon">
-                    </div>
-                    <div class="white-screen">
-                        <h5>{{ 'PROJECTS.COMING_SOON' | translate }}</h5>
                     </div>
                 </div>
             </div>

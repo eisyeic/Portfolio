@@ -77,6 +77,9 @@
     "FORM_PRIVACY_LINK": "privacy policy",
     "FORM_PRIVACY_TEXT_AFTER": "and agree to the processing of my data as outlined.",
     "FORM_SEND_BUTTON": "Send",
+    "FORM_NAME_ERROR": "Please enter your name.",
+    "FORM_EMAIL_ERROR": "Please enter a valid email address.",
+    "FORM_MESSAGE_ERROR": "Please enter a message.",
     "FORM_POPUP_SUCCESS": "The message has been transmitted.",
     "FORM_POPUP_OK": "OK",
     "TESTIMONIALS_TITLE": "Need a team player? Here’s what my colleagues say about me",
@@ -93,7 +96,6 @@
             "POKEDEX": "1. Pokedex",
             "ELPOLLOLOCO": "2. El pollo loco",
             "JOIN": "3. Join",
-            "ONGOING": "4. Ongoing Project",
             "PROJECT": "Project"
         },
         "TECHNOLOGIES": "Technologies",
@@ -149,16 +151,6 @@
         "LEARNED": {
             "TITLE": "What I have learnt",
             "CONTENT": "There were three of us on the team, and the roles were evenly distributed. My main responsibilities were on the task management, notice board, legal notice, and privacy policy pages. It was a great collaboration and a successful project."
-        }
-    },
-    "ONGOING": {
-        "ABOUT": {
-            "TITLE": "About the project",
-            "DURATION": "Duration: 3 weeks",
-            "CONTENT": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. Show a desire to learn new technologies and continually improve your skills.",
-            "MOBILE_P": "Ongoing Project",
-            "MOBILE": "Technologies: Angular, TypeScript, Firebase",
-            "Mobile_DURATION": "Duration: 3 weeks"
         }
     }
 }

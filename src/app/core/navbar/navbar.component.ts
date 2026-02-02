@@ -18,18 +18,32 @@ export class NavbarComponent {
   currentLang = this.translate.currentLang || 'en';
 
   constructor(private translateService: TranslateService) {
+    // Check if running in browser
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const savedLang = localStorage.getItem('selectedLanguage') || 'de';
+      this.translateService.use(savedLang);
+      this.currentLang = savedLang;
+    } else {
+      this.translateService.use('de');
+      this.currentLang = 'de';
+    }
+
     this.translateService.onLangChange.subscribe(event => {
       this.currentLang = event.lang;
     });
   }
 
   /** 
-   * Switches application language
-   * @param lang - Language code to switch to
-   */
+    * Switches application language
+    * @param lang - Language code to switch to
+    */
   switchLanguage(lang: string): void {
     this.translateService.use(lang);
     this.currentLang = lang;
+    // Save only if in browser
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem('selectedLanguage', lang);
+    }
   }
 
   /** Handles logo click - scrolls to top or navigates to home */
@@ -66,7 +80,7 @@ export class NavbarComponent {
     if (element) {
       const elementPosition = element.offsetTop;
       const offsetPosition = elementPosition - 50;
-      
+
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'

@@ -16,11 +16,17 @@ export class AppComponent implements OnInit {
   constructor(
     private router: Router,
     private translate: TranslateService
-  ) {}
+  ) { }
 
   /** Initializes application with default language settings */
   ngOnInit(): void {
-    this.translate.setDefaultLang('de');
-    this.translate.use('de');
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const savedLang = localStorage.getItem('selectedLanguage') || 'de';
+      this.translate.setDefaultLang(savedLang);
+      this.translate.use(savedLang);
+    } else {
+      this.translate.setDefaultLang('de');
+      this.translate.use('de');
+    }
   }
 }

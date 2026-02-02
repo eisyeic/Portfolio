@@ -33,6 +33,17 @@
   gap: 24px;
 }
 
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: rgb(137, 187, 217);
+  text-align: center;
+  font-size: 18px;
+}
+
 // ===========================
 // SKILLS TEXT SECTIONS
 // ===========================
@@ -62,6 +73,27 @@
   }
 }
 
+.item-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-learn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  width: 40px;
+}
+
+// ===========================
+// SKILLS TEXT SECTIONS MOBILE
+// ===========================
+
 .my-skills-text-box-mobile {
   display: none;
   flex-direction: column;
@@ -88,7 +120,9 @@
   height: 130px;
   background-position: center;
   background-repeat: no-repeat;
+  gap: 20px;
 }
+
 
 // ===========================
 // UTILITY CLASSES
@@ -175,10 +209,5 @@
 
   .my-skills-item {
     grid-template-columns: repeat(2, 1fr);
-    
-    img {
-      width: 100% !important;
-      height: 100px;
-    }
   }
 }
