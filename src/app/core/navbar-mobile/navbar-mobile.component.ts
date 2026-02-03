@@ -89,6 +89,15 @@ export class NavbarMobileComponent {
    */
   private scrollToElement(sectionId: string): void {
     const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (element && window.innerWidth <= 1040) {
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition + 50;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    } else {
+      element?.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

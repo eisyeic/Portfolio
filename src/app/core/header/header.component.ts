@@ -44,4 +44,17 @@ export class HeaderComponent {
       });
     }
   }
+
+  /** Scrolls to why-me section with 100px offset */
+  scrollToWhyMe(): void {
+    const element = document.getElementById('why-me');
+    if (element) {
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - 100;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
 }

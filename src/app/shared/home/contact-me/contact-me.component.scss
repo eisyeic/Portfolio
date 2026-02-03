@@ -254,6 +254,11 @@
     display: none;
   }
 
+  .contact-me {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .back-button-mobile-container {
     display: flex;
   }
@@ -323,5 +328,9 @@
         color: white;
       }
     }
+  }
+
+  h2 {
+    margin-bottom: 50px;
   }
 }

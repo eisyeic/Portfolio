@@ -50,7 +50,7 @@
     <h1 class="anta-regular">{{ 'HEADER_NAME' | translate }}</h1>
     <h3>{{ 'HEADER_ROLE' | translate }}</h3>
 
-    <a href="#why-me" class="arrow-down">
+    <a (click)="scrollToWhyMe()" class="arrow-down" style="cursor: pointer;">
       <img src="/assets/img/header/arrow-down.svg" alt="arrow-down">
     </a>
   </div>

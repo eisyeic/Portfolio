@@ -21,8 +21,8 @@
 .nav {
   height: 100px;
   width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 250px;
+  padding-right: 250px;
   display: flex;
   max-width: 1920px;
 
@@ -88,6 +88,8 @@
   display: flex;
   flex-direction: column;
   max-width: 960px;
+  padding-left: 250px;
+  padding-top: 50px;
 }
 
 .container-right {
@@ -96,6 +98,7 @@
   flex-direction: column;
   margin-left: 50px;
   max-width: 960px;
+  padding-right: 250px;
 }
 
 // ===========================
@@ -269,6 +272,20 @@
 // RESPONSIVE DESIGN
 // ===========================
 
+@media screen and (max-width: 1920px) {
+  .nav {
+    padding-left: 100px;
+  }
+
+  .container-left {
+    padding-left: 0;
+  }
+
+  .container-right {
+    padding-right: 0;
+  }
+}
+
 @media screen and (max-width: 1340px) {
   .content {
     padding-left: 50px;
@@ -285,6 +302,11 @@
 @media screen and (max-width: 1040px) {
   .nav {
     display: none;
+  }
+
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .nav-mobile {
@@ -350,6 +372,12 @@
 
   .button-box {
     display: none;
+  }
+
+  .projects {
+    h2 {
+      margin-bottom: 50px;
+    }
   }
 }
 

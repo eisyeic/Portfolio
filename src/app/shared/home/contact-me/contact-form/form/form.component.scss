@@ -44,14 +44,35 @@ label {
 input[type="text"],
 input[type="email"] {
   width: 100%;
-  background: transparent;
-  border: 1.5px solid rgb(137, 187, 217);
+  background: transparent !important;
+  border: 1.5px solid rgb(137, 187, 217) !important;
   border-radius: 50px;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 14px;
   outline: none;
   height: 50px;
   padding: 8px 30px;
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  &:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  &:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
 }
 
 textarea {
@@ -170,6 +191,9 @@ button {
   button {
     width: auto;
     padding: 10px 25px;
+    position: static !important;
+    bottom: auto !important;
+    right: auto !important;
   }
 }
 

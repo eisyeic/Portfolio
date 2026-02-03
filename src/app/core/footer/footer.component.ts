@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { ViewportScroller, NgStyle } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -8,7 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
-  imports: [TranslateModule, NgStyle]
+  imports: [TranslateModule, NgStyle, RouterModule]
 })
 export class FooterComponent {
   private router = inject(Router);

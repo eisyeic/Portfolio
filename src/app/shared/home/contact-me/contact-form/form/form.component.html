@@ -71,7 +71,7 @@
 
         <p>
           {{ 'FORM_PRIVACY_TEXT_BEFORE' | translate }}
-          <a href="/privacy-policy" (click)="$event.stopPropagation()">{{ 'FORM_PRIVACY_LINK' | translate }}</a>
+          <a routerLink="/privacy-policy" (click)="$event.stopPropagation()">{{ 'FORM_PRIVACY_LINK' | translate }}</a>
           {{ 'FORM_PRIVACY_TEXT_AFTER' | translate }}
         </p>
       </div>

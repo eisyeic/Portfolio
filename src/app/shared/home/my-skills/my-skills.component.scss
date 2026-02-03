@@ -116,7 +116,7 @@
   align-items: center;
   background-image: url('/assets/img/my-skills/ellipse-default.svg');
   background-size: contain;
-  width: 400px;
+  width: 100%;
   height: 130px;
   background-position: center;
   background-repeat: no-repeat;
@@ -172,6 +172,11 @@
 }
 
 @media screen and (max-width: 1040px) {
+ .my-skills {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .my-skills-box {
     flex-direction: column;
   }
@@ -186,6 +191,12 @@
 
   .button-box {
     display: flex;
+  }
+
+  .my-skills {
+    h2 {
+      margin-bottom: 50px;
+    }
   }
 }
 
