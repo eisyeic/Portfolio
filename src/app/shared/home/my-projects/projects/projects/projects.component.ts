@@ -34,7 +34,7 @@ export class ProjectsComponent implements OnInit {
     if (typeof window !== 'undefined' && window.innerWidth <= 1040) {
       if (tab === 1) {
         this.contentBorderRadius = '0 30px 30px 30px';
-      } else if (tab === 4) {
+      } else if (tab === 3) {
         this.contentBorderRadius = '30px 0 30px 30px';
       } else {
         this.contentBorderRadius = '30px';

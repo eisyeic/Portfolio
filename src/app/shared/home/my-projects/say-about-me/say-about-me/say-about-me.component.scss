@@ -12,6 +12,7 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
+  max-width: 1920px;
 
   h4 {
     color: rgb(137, 186, 217);
@@ -89,8 +90,8 @@
 
 @media screen and (max-width: 1340px) {
   .say-about-me {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     .h4-desktop {
       display: none;

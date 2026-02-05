@@ -91,7 +91,7 @@ export class NavbarMobileComponent {
     const element = document.getElementById(sectionId);
     if (element && window.innerWidth <= 1040) {
       const elementPosition = element.offsetTop;
-      const offsetPosition = elementPosition + 50;
+      const offsetPosition = elementPosition + 70;
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'

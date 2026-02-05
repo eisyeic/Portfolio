@@ -66,6 +66,11 @@ a {
     display: flex;
     width: 100%;
   }
+
+  .legal-notice-container {
+    padding-top: 50px;
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 1040px) {
@@ -82,7 +87,7 @@ a {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   .legal-notice-container {
     padding: 20px;
   }

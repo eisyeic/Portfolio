@@ -239,8 +239,8 @@ header {
 
 @media screen and (max-width: 1340px) {
   header {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -294,6 +294,11 @@ header {
 }
 
 @media screen and (max-width: 1040px) {
+  header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .logo-mobile {
     object-fit: contain;
     width: calc(100vw - 100px);

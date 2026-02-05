@@ -48,7 +48,9 @@ export class FormComponent {
   /** Validates name field */
   validateName(): void {
     if (this.nameTouched) {
-      this.nameError = this.name.trim() === '';
+      const cleanName = this.name.trim().replace(/\s+/g, ' ');
+      const isValidName = /^[a-zA-ZäöüÄÖÜß\s'\-]+$/.test(cleanName);
+      this.nameError = cleanName === '' || !isValidName;
     }
   }
 
@@ -67,9 +69,28 @@ export class FormComponent {
   }
 
   /** Handles input changes for real-time validation */
-  onInputChange(field: string): void {
+  onInputChange(field: string, event?: Event): void {
     switch (field) {
       case 'name':
+        if (event?.type === 'keydown') {
+          const keyEvent = event as KeyboardEvent;
+          const key = keyEvent.key;
+          const isValidKey = /^[a-zA-ZäöüÄÖÜß'\-\s]$/.test(key) || 
+                            ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab', 'Enter'].includes(key);
+          if (!isValidKey && key.length === 1) {
+            keyEvent.preventDefault();
+            return;
+          }
+        }
+        const input = event?.target as HTMLInputElement;
+        if (input) {
+          const cursorPosition = input.selectionStart || 0;
+          const filteredName = this.name.replace(/[^a-zA-ZäöüÄÖÜß\s'\-]/g, '').replace(/\s{2,}/g, ' ');
+          if (this.name !== filteredName) {
+            this.name = filteredName;
+            setTimeout(() => input.setSelectionRange(cursorPosition, cursorPosition), 0);
+          }
+        }
         if (this.nameTouched) this.validateName();
         break;
       case 'email':
@@ -85,6 +106,7 @@ export class FormComponent {
   onFieldBlur(field: string): void {
     switch (field) {
       case 'name':
+        this.name = this.name.replace(/[^a-zA-ZäöüÄÖÜß\s'\-]/g, '').replace(/\s{2,}/g, ' ').trim();
         this.nameTouched = true;
         this.validateName();
         break;
@@ -107,7 +129,10 @@ export class FormComponent {
 
   /** Checks if form is valid */
   isFormValid(): boolean {
-    return this.name.trim() !== '' && 
+    const cleanName = this.name.trim().replace(/\s+/g, ' ');
+    const isValidName = /^[a-zA-ZäöüÄÖÜß\s'\-]+$/.test(cleanName);
+    return cleanName !== '' && 
+           isValidName &&
            this.email.trim() !== '' && 
            this.isValidEmail(this.email) &&
            this.message.trim() !== '' && 

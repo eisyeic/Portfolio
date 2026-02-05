@@ -17,7 +17,8 @@
           placeholder="{{ 'FORM_NAME_LABEL' | translate }}"
           [(ngModel)]="name"
           (blur)="onFieldBlur('name')"
-          (input)="onInputChange('name')" />
+          (input)="onInputChange('name', $event)"
+          (keydown)="onInputChange('name', $event)" />
         <div class="error-message" *ngIf="nameError">
           {{ 'FORM_NAME_ERROR' | translate }}
         </div>

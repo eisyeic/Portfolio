@@ -91,8 +91,8 @@
 
 @media screen and (max-width: 1340px) {
   .why-me-container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     h2 {
       margin-bottom: 50px;
@@ -102,8 +102,8 @@
 
 @media screen and (max-width: 1040px) {
   .why-me-container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -131,5 +131,17 @@
   .from,
   .why-me-text {
     width: calc(100vw - 100px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .why-me-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .from,
+  .why-me-text {
+    width: calc(100vw - 40px);
   }
 }
