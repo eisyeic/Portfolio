@@ -1,27 +1,41 @@
-# MyPortfolio
+# 🌐 Personal Portfolio Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+This is my personal developer portfolio website.  
+It presents my projects, skills, and web development work in a clear and modern interface.
 
-## Development server
+🌍 **Live Website:**  
+https://davideisenbarth.infinityfreeapp.com/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 🧑‍💻 Personal developer portfolio
+- 📂 Project showcase with live demos
+- 📱 Responsive design for desktop and mobile
+- 🎨 Modern UI layout
+- 🌐 External project links
+- ⚡ Fast loading static website
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Tech Stack
 
-## Running unit tests
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+- Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🎯 Purpose
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The purpose of this website is to:
 
-## Further help
+- Present my frontend development projects
+- Showcase my coding skills
+- Provide a central hub for my work
+- Support my developer portfolio and job applications
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---

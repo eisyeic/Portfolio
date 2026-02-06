@@ -21,8 +21,8 @@
 .nav {
   height: 100px;
   width: 100%;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
   display: flex;
   max-width: 1920px;
 
@@ -74,12 +74,11 @@
   background-color: rgb(45, 57, 64) !important;
   height: 100%;
   display: flex;
-  padding-left: 100px;
-  padding-right: 100px;
   padding-top: 20px;
   padding-bottom: 35px;
   width: 100%;
   justify-content: center;
+  gap: 20px;
 }
 
 .container-left {
@@ -88,17 +87,17 @@
   display: flex;
   flex-direction: column;
   max-width: 960px;
-  padding-left: 250px;
+  padding-left: 100px;
   padding-top: 50px;
 }
 
 .container-right {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
   max-width: 960px;
-  padding-right: 250px;
+  width: 100%;
+  padding-right: 100px;
+  align-items: flex-end;
 }
 
 // ===========================
@@ -147,7 +146,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   gap: 20px;
 
   span {
@@ -180,6 +178,7 @@
   height: 320px;
   object-fit: contain;
   border-radius: 25px;
+  align-self: center;
 }
 
 .screen-cover {
@@ -188,6 +187,7 @@
   height: 320px;
   border-radius: 25px;
   object-position: right top left;
+  align-self: center;
 }
 
 .white-screen {
@@ -199,6 +199,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 70px;
+  align-self: center;
 
   h5 {
     font-size: 26px;
@@ -272,27 +273,6 @@
 // RESPONSIVE DESIGN
 // ===========================
 
-@media screen and (max-width: 1920px) {
-  .nav {
-    padding-left: 100px;
-  }
-
-  .container-left {
-    padding-left: 0;
-  }
-
-  .container-right {
-    padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 1340px) {
-  .content {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
 @media screen and (min-width: 1040px) {
   .button-box-mobile {
     display: none;
@@ -302,11 +282,6 @@
 @media screen and (max-width: 1040px) {
   .nav {
     display: none;
-  }
-
-  .content {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .nav-mobile {
@@ -321,11 +296,13 @@
   .content {
     flex-direction: column-reverse;
     align-items: center;
+    padding: 50px;
   }
 
   .container-left {
     padding-top: 50px;
     hyphens: auto;
+    padding: 0;
 
     p {
       padding-left: 0 !important;
@@ -339,6 +316,8 @@
 
   .container-right {
     margin-left: 0;
+    padding: 0;
+    align-items: flex-start;
   }
 
   .text-area {
@@ -352,6 +331,9 @@
   }
 
   .picture-area {
+    align-items: flex-start;
+    gap: 0;
+
     span {
       display: none;
     }
@@ -401,5 +383,11 @@
   .white-screen {
     width: 270px;
     height: 185px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    padding: 20px;
   }
 }
